@@ -103,35 +103,41 @@ em {
 .namedate {
 	font-size: 12px;
 	color: #86796A;
+	font-family: 'Lato', sans-serif;
 	float: left;
 	margin: 2% 0 0 2%;
-	padding-top: 2.5%;
+	padding-top: 3%;
 }
 
 .article1 {
 	color: #373E46;
+	font-family: 'Lato', sans-serif;
 	margin-top: 15%;
 	line-height: 1.7;
 	clear: both;
 }
 
-.photossection {
+.image_wrapper {
 	margin: 0 auto;
 	width: 100%;
 	overflow: hidden;
+	box-sizing: border-box;
 }
 
-.section2 {
+.leftimage {
 	width: 210px;
 	height: 210px;
 	float: left;
 	margin-right: 5px;
+	overflow: hidden;
 }
 
-.section3 {
+.rightimage {
 	width: 210px;
 	height: 210px;
 	margin-left: 5px;
+	float: left;
+	overflow: hidden;
 }
 
 .section4 {
@@ -141,6 +147,7 @@ em {
 
 .article2 {
 	color: #373E46;
+	font-family: 'Lato', sans-serif;
 	margin: 0;
 	line-height: 1.7;
 	font-size: 12pt;
@@ -148,6 +155,7 @@ em {
 
 .blockquote {
 	color: #86796A;
+	font-family: 'Lato', sans-serif;
 	border-left: 1px solid #373E46;
 	padding-left: 30px;
 	font-size: 16pt;
@@ -172,6 +180,7 @@ em {
 .section5 {
 	margin-top: 45px;
 	text-align: center;
+	font-family: 'Lato', sans-serif;
 }
 
 .profile2 {
@@ -192,8 +201,9 @@ em {
 	text-align: center;
 }
 
-.section6 {
+.social_media_wrapper {
 	margin-top: 30px;
+	overflow: hidden;
 }
 
 .facebook,
@@ -204,6 +214,7 @@ em {
 	text-align: center;
 	color: #fff;
 	font-size: 16pt;
+	font-family: 'Lato', sans-serif;
 }
 
 .facebook {
@@ -229,7 +240,7 @@ em {
 }
 
 
-.featurearticles {
+.featurearticles_wrapper {
 	overflow: hidden;
 }
 
@@ -238,8 +249,9 @@ em {
 	font-size: 40pt;
 	font-weight: bold;
 	color: #fff;
+	font-family: 'Lato', sans-serif;
 	padding: 45px 150px 45px 30px;
-	box-sizing: border-box;
+	overflow: hidden;
 	background-image: url(images/bluberries.jpg);
 	background-size: cover;
 	background-position: center;
@@ -250,6 +262,7 @@ em {
 	font-size: 40pt;
 	font-weight: bold;
 	color: #fff;
+	font-family: 'Lato', sans-serif;
 	padding: 45px 150px 45px 30px;
 	box-sizing: border-box;
 	background-image: url(images/san_francisco.jpg);
@@ -263,6 +276,7 @@ em {
 	font-size: 40pt;
 	font-weight: bold;
 	color: #fff;
+	font-family: 'Lato', sans-serif;
 	padding: 45px 100px 45px 30px;
 	box-sizing: border-box;
 	background-image: url(images/woods.jpg);
@@ -274,6 +288,7 @@ em {
 	background-color: #373E46;
 	padding: 5px;
 	overflow: hidden;
+	font-family: 'Lato', sans-serif;
 }
 
 .logo {
@@ -302,6 +317,10 @@ em {
 	color: #fff;
 	text-decoration: none;
 	margin: 0 8px;
+}
+
+.footernav a:hover {
+	color: #DCD1C8;
 }
 
 @media screen and (min-width: 800px) {
@@ -376,13 +395,16 @@ em {
 	.instagram,
 	.twitter {
 		float: left;
-		padding: 20px 5px;
-		width: 29%;
+		min-width: 32%;
 		font-size: 11pt;
 	}
 
+	.soc {
+		padding: 20px 5px;
+	}
+
 	.instagram {
-		margin: 0 2.7px;
+		margin: 0 3px;
 	}
 
 	.border {
@@ -394,17 +416,19 @@ em {
 	}
 
 	.featarticle1 {
+		height: 49%;
 		margin-top: 10px;
 		font-size: 30pt;
-		padding: 30px 55px 30px 30px;
+		padding: 30px 155px 30px 30px;
 	}
 
 	.featarticle2 {
 		float: left;
 		width: 49%;
+		min-height: 145px;
 		margin-top: 5px;
 		font-size: 20pt;
-		padding: 40px 0 40px 15px;
+		padding: 40px 40px 40px 15px;
 	}
 
 	.featarticle3 {
@@ -413,6 +437,8 @@ em {
 		margin-left: 5px;
 		margin-top: 5px;
 		font-size: 20pt;
-		padding: 25px 0 25px 15px;
+		min-height: 145px; 
+		padding: 25px 50px 25px 15px;
 	}
+
 }
