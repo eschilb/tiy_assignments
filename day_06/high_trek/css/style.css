@@ -1,7 +1,9 @@
+@import ‘variables’;
+
 .header {
-	background-image: url(images/hero.jpg);
+	background-image: url(../images/hero.jpg);
 	background-size: cover;
-	color: #FFFEFF;
+	color: $primary-color;
 	font-family: 'Lato', sans-serif;
 	display: block;
 	padding-top: 10px;
@@ -41,7 +43,7 @@ li {
 
 a,
 li > img {
-	color: #fff;
+	color: $primary-color;
 	text-decoration: none;
 }
 
@@ -221,7 +223,7 @@ em {
 .instagram,
 .twitter {
 	height: 32%;
-	color: #fff;
+	color: $primary-color;
 	font-size: 16pt;
 	font-family: 'Lato', sans-serif;
 	overflow: hidden;
@@ -261,11 +263,11 @@ em {
 	margin-top: 30px;
 	font-size: 40pt;
 	font-weight: bold;
-	color: #fff;
+	color: $primary-color;
 	font-family: 'Lato', sans-serif;
 	padding: 45px 150px 45px 30px;
 	overflow: hidden;
-	background-image: url(images/bluberries.jpg);
+	background-image: url(../images/bluberries.jpg);
 	background-size: cover;
 	background-position: center;
 }
@@ -274,11 +276,11 @@ em {
 	margin-top: 40px;
 	font-size: 40pt;
 	font-weight: bold;
-	color: #fff;
+	color: $primary-color;
 	font-family: 'Lato', sans-serif;
 	padding: 45px 150px 45px 30px;
 	box-sizing: border-box;
-	background-image: url(images/san_francisco.jpg);
+	background-image: url(../images/san_francisco.jpg);
 	background-size: cover;
 	background-position: center;
 }
@@ -288,11 +290,11 @@ em {
 	margin-bottom: 40px;
 	font-size: 40pt;
 	font-weight: bold;
-	color: #fff;
+	color: $primary-color;
 	font-family: 'Lato', sans-serif;
 	padding: 45px 100px 45px 30px;
 	box-sizing: border-box;
-	background-image: url(images/woods.jpg);
+	background-image: url(../images/woods.jpg);
 	background-size: cover;
 	background-position: center;
 }
@@ -314,7 +316,7 @@ em {
 
 .copyright {
 	margin: 13px auto 0 auto;
-	color: #fff;
+	color: $primary-color;
 	font-size: 12pt;
 	text-align: center;
 }
@@ -323,11 +325,11 @@ em {
 .footernav {
 	width: 210px;
 	margin: 20px auto 40px auto;
-	color: #fff;
+	color: $primary-color;
 }
 
 .footernav > a {
-	color: #fff;
+	color: $primary-color;
 	text-decoration: none;
 	margin: 0 8px;
 }
@@ -430,7 +432,7 @@ em {
 	}
 
 	.social_media_wrapper div:nth-child(2) {
-	margin: 0;
+		margin: 0;
 	}
 
 	.border {
