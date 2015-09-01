@@ -51,7 +51,7 @@ a:hover {
 
 h1 {
 	font-size: 45px;
-	margin: 15% 25% 0 25%;
+	margin: 5% 25% 0 25%;
 	text-align: center;
 	font-weight: normal;
 }
@@ -69,6 +69,7 @@ em {
 }
 
 .main {
+	margin: 0 auto;
 	width: 500px;
 	padding-left: 30px;
 	padding-right: 30px;
@@ -203,31 +204,43 @@ em {
 
 .social_media_wrapper {
 	margin-top: 30px;
+	max-width: 470px;
 	overflow: hidden;
+}
+
+.social_media_wrapper div {
+	text-align: center;
+	padding: 20px 0;
+}
+
+.social_media_wrapper div:nth-child(2) {
+	margin: 2% 0;
 }
 
 .facebook,
 .instagram,
 .twitter {
-	padding: 20px 0;
 	height: 32%;
-	text-align: center;
 	color: #fff;
 	font-size: 16pt;
 	font-family: 'Lato', sans-serif;
+	overflow: hidden;
 }
 
 .facebook {
 	background-color: #3D5C98;
+	padding: 20px 180px;
 }
 
 .instagram {
 	background-color: #407398;
 	margin: 2% 0;
+	padding: 20px 180px;
 }
 
 .twitter {
 	background-color: #59AEEA;
+	padding: 20px 190px;
 }
 
 .featuretitle {
@@ -324,6 +337,10 @@ em {
 }
 
 @media screen and (min-width: 800px) {
+	.header {
+		max-height: 400px;
+	}
+
 	.logo {
 		float: left;
 	}
@@ -386,6 +403,14 @@ em {
 	.namedescription {
 		margin-top: 0;
 	}
+	
+	.social_media_wrapper {
+		overflow: hidden;
+	}
+
+	.social_media_wrapper div {
+		padding: 0;
+	}
 
 	.facebook {
 		float: left;
@@ -394,17 +419,18 @@ em {
 	.facebook,
 	.instagram,
 	.twitter {
+		padding: 20px 5px;
 		float: left;
-		min-width: 32%;
+		min-width: 29%;
 		font-size: 11pt;
 	}
 
-	.soc {
-		padding: 20px 15px;
+	.instagram {
+		margin: 0 2px;
 	}
 
-	.instagram {
-		margin: 0 3px;
+	.social_media_wrapper div:nth-child(2) {
+	margin: 0;
 	}
 
 	.border {
