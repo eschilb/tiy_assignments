@@ -54,6 +54,10 @@ li > img
 .footernav > a {
 	color: $primary-color;
 	text-decoration: none;
+
+	&:hover {
+		color: $quaternary-color;
+	}
 }
 
 a:hover {
@@ -88,9 +92,7 @@ em {
 	box-sizing: border-box;
 }
 
-.section1,
-.section2,
-.section3, {
+.section1 {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
@@ -176,6 +178,8 @@ em {
 	padding: 20px;
 }
 
+
+/*-AUTHOR/DATE SECTION-*/
 
 .section5 {
 	margin-top: 45px;
@@ -272,43 +276,22 @@ em {
 }
 
 .featarticle1 {
-	// margin-top: 30px;
-	// font-size: 40pt;
-	// font-weight: bold;
-	// color: $primary-color;
-	// font-family: $primary-font-family;
 	padding: 45px 150px 45px 30px;
 	overflow: hidden;
 	background-image: url(../images/bluberries.jpg);
-	// background-size: cover;
-	// background-position: center;
 }
 
 .featarticle2 {
-	// margin-top: 40px;
-	// font-size: 40pt;
-	// font-weight: bold;
-	// color: $primary-color;
-	// font-family: $primary-font-family;
 	padding: 45px 150px 45px 30px;
 	box-sizing: border-box;
 	background-image: url(../images/san_francisco.jpg);
-	// background-size: cover;
-	// background-position: center;
 }
 
 .featarticle3 {
-	// margin-top: 40px;
 	margin-bottom: 40px;
-	// font-size: 40pt;
-	// font-weight: bold;
-	// color: $primary-color;
-	// font-family: $primary-font-family;
 	padding: 45px 100px 45px 30px;
 	box-sizing: border-box;
 	background-image: url(../images/woods.jpg);
-	// background-size: cover;
-	// background-position: center;
 }
 
 /*-FOOTER-*/
@@ -346,9 +329,6 @@ em {
 	}
 }
 
-.footernav a:hover {
-	color: $quaternary-color;
-}
 
 /*-LARGE SCREEN VERSION MEDIA QUERIES-*/
 
@@ -393,6 +373,8 @@ em {
 		font-size: 28pt;
 	}
 
+/*-wrappers-*/
+
 	.right_column_wrapper {
 		width: 40%;
 		padding-left: 15px;
@@ -412,6 +394,8 @@ em {
 		width: 100%;
 	}
 
+/*-AUTHOR/DATE SECTION-*/
+
 	.section5 {
 		margin-top: 0;
 	}
@@ -425,6 +409,8 @@ em {
 		margin-top: 0;
 	}
 	
+/*-SOCIAL BUTTONS-*/
+
 	.social_media_wrapper {
 		overflow: hidden;
 
@@ -455,6 +441,8 @@ em {
 	.border {
 		clear: both;
 	}
+
+/*----FEATURED ARTICLES SECTION---*/
 
 	.featuretitle {
 		margin-bottom: 0;

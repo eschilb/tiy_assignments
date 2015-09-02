@@ -40,6 +40,10 @@ li > img
 .footernav > a {
   color: #fff;
   text-decoration: none; }
+  a:hover,
+  li > img
+  .footernav > a:hover {
+    color: #DCD1C8; }
 
 a:hover {
   color: #DCD1C8; }
@@ -68,9 +72,7 @@ em {
   overflow: hidden;
   box-sizing: border-box; }
 
-.section1,
-.section2,
-.section3 {
+.section1 {
   margin-top: 20px;
   margin-bottom: 20px; }
 
@@ -141,6 +143,7 @@ em {
   border-bottom: 1px solid #373E46;
   padding: 20px; }
 
+/*-AUTHOR/DATE SECTION-*/
 .section5 {
   margin-top: 45px;
   text-align: center;
@@ -254,9 +257,6 @@ em {
   .footernav a {
     margin: 0 8px; }
 
-.footernav a:hover {
-  color: #DCD1C8; }
-
 /*-LARGE SCREEN VERSION MEDIA QUERIES-*/
 @media screen and (min-width: 800px) {
   /*-FOOTER-*/
@@ -288,6 +288,7 @@ em {
   h4 {
     font-size: 28pt; }
 
+  /*-wrappers-*/
   .right_column_wrapper {
     width: 40%;
     padding-left: 15px;
@@ -304,6 +305,7 @@ em {
   .main {
     width: 100%; }
 
+  /*-AUTHOR/DATE SECTION-*/
   .section5 {
     margin-top: 0; }
 
@@ -314,6 +316,7 @@ em {
   .namedescription {
     margin-top: 0; }
 
+  /*-SOCIAL BUTTONS-*/
   .social_media_wrapper {
     overflow: hidden; }
     .social_media_wrapper div {
@@ -335,6 +338,7 @@ em {
   .border {
     clear: both; }
 
+  /*----FEATURED ARTICLES SECTION---*/
   .featuretitle {
     margin-bottom: 0; }
 
