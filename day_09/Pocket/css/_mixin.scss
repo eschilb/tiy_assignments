@@ -1,0 +1,15 @@
+$tot-width: 100%;
+$total-num-col: 12;
+$gut-width: 2%;
+$ind-col-width: ($tot-width - (($total-num-col - 1)*$gut-width))/$total-num-col;
+
+@mixin grid($col-num) {
+  width: ($ind-col-width*$col-num)+(($col-num)-1)*$gut-width;
+  float: left;
+  box-sizing: border-box;
+  margin-right: $gut-width;
+  
+  &:last-child {
+    margin-right: 0;
+  }
+}

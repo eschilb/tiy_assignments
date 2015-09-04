@@ -1,4 +1,4 @@
-@import 'variables';
+@import 'variables', 'mixin';
 
 
 /*-------------Main Body-----*/
@@ -54,6 +54,12 @@ a {
 	display: none;
 }
 
+/*----The Sidebar for the large screen navigation-----------*/
+
+.sidebar_nav {
+	display: none;
+}
+
 
 /*------The Header for the small screen navigation------*/
 
@@ -65,6 +71,7 @@ ul {
 	li {
 	text-decoration: none;
 	float: left;
+	display: inline-block;
 
 		&:first-child {
 		padding-top: 10px;
@@ -85,6 +92,9 @@ ul {
 		h1 {
 		margin-top: 0;
 		margin-bottom: 0;
+		font-size: $primary-font-size;
+		vertical-align: middle;
+		padding-top: 9px;
 		}
 	}
 }
@@ -100,6 +110,7 @@ ul {
 	.col-1 {
 		overflow: hidden;
 		border-top: solid #E9EAEC 2px;
+		position: relative;
 
 		div {
 			// overflow: hidden;
@@ -127,12 +138,66 @@ ul {
 		.article_img {
 			float: right;
 			max-width: 85px;
-			display: inline-block;
-		}
 
-		img {
-			max-width: 85px;
-			display: inline-block;
+			.love_bug {
+				background: url(../images/love_bug.jpg) 0 0 no-repeat;
+  				background-size: cover;
+  				background-position: 50%;
+  				right: 0;
+  				position: absolute;
+    			height: 100%;
+  				width: 80px;
+			}
+
+			.cartoon {
+				background: url(../images/cartoon.jpeg) 0 0 no-repeat;
+  				background-size: cover;
+  				background-position: 50%;
+  				right: 0;
+  				position: absolute;
+    			height: 100%;
+  				width: 80px;
+			}
+
+			.instagram {
+				background: url(../images/instagram.jpg) 0 0 no-repeat;
+  				background-size: cover;
+  				background-position: 50%;
+  				right: 0;
+  				position: absolute;
+    			height: 100%;
+  				width: 80px;
+			}
+
+			.google {
+				background: url(../images/google.jpg) 0 0 no-repeat;
+  				background-size: cover;
+  				background-position: 50%;
+  				right: 0;
+  				position: absolute;
+    			height: 100%;
+  				width: 80px;
+			}
+
+			.jcrew {
+				background: url(../images/jcrew.jpg) 0 0 no-repeat;
+  				background-size: cover;
+  				background-position: 50%;
+  				right: 0;
+  				position: absolute;
+    			height: 100%;
+  				width: 80px;
+			}
+
+			.tumblr {
+				background: url(../images/tumblr.jpg) 0 0 no-repeat;
+  				background-size: cover;
+  				background-position: 50%;
+  				right: 0;
+  				position: absolute;
+    			height: 100%;
+  				width: 80px;
+			}
 		}
 	}
 }	
@@ -140,3 +205,14 @@ ul {
 .footer {
 	padding: 20px;
 }
+
+
+@media screen and (min-width: 671px) {
+	.wrapper {
+		width: 100%
+	}
+
+	.col-1 {
+		@include grid(3);
+	}
+}	
