@@ -18,6 +18,17 @@ body {
   .top_border_wrapper div:last-child {
     border-top: solid #EBBE6A 3px; }
 
+/*-------------------------Links Styling--------------------------*/
+a {
+  text-decoration: none;
+  color: #313131; }
+  a:hover {
+    color: #50bcb6; }
+
+/*----The Header for the large screen navigation-----------*/
+.header_nav {
+  display: none; }
+
 /*------The Header for the small screen navigation------*/
 ul {
   overflow: hidden;

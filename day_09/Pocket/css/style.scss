@@ -36,6 +36,25 @@ body {
 	}
 }
 
+/*-------------------------Links Styling--------------------------*/
+
+a {
+	text-decoration: none;
+	color: $tertiary-color;
+
+	&:hover {
+		color: $quaternary-color;
+	}
+}
+
+
+/*----The Header for the large screen navigation-----------*/
+
+.header_nav {
+	display: none;
+}
+
+
 /*------The Header for the small screen navigation------*/
 
 ul {
