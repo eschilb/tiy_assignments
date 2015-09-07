@@ -137,7 +137,6 @@ a {
 		.article_source_website {
 			padding: 10px 0 40px 24px;
 			max-width: 75%;
-			float: left;
 			margin: 0;
 			
 			a{ 
@@ -329,12 +328,15 @@ a {
 	.row {
 		margin-top: 2%;
 		background-color: $primary-color;
+		height: 285px;
 
 		.col-1 {
 			@include grid(4);
 			border: none; 
 			background-color: $secondary-color;
 			overflow: hidden;
+			box-sizing: border-box;
+			height: 100%;
 			
 			.article_title {
 				width: 100%;
@@ -347,21 +349,24 @@ a {
 				max-width: 100%;
 			
 				.love_bug, .greyed_out, .cartoon, .instagram, .google, .jcrew, .tumblr {
-					height: 65%;
+					height: 175px;
 					width: 100%;
+					bottom: 40px;
 				}
 			}
 
 			.source_image {
 				display: inline-block;
-				float: left;
-				padding:200px 0 10px 10px;
+				position: absolute;
+				bottom: 10px;
+				left: 10px;
 			}
 
 			.article_source_website {
-				float: left;
 				max-width: 100%;
-				padding: 200px 0 10px 10px;
+				padding: 0 0 0 35px;
+				position: absolute;
+				bottom: 12px;
 			}
 		}
 	}
