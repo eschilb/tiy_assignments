@@ -5,16 +5,22 @@
 
 body {
 	background-color: $primary-color;
+	font-family: $primary-font-family;
 }
 
 .wrapper {
 	width: 400px;
+	overflow: hidden;
 }
 
 
 /*-----------Colorblock Top Border------------*/
 
 .top_border_wrapper	 {
+	z-index: 2;
+	// overflow: hidden;
+	// position: fixed;
+	// box-sizing: border-box;
 
 	div {
 		width: 25%;
@@ -66,6 +72,7 @@ a {
 /*------The Header for the small screen navigation------*/
 
 .list_header {
+
 	ul {
 		overflow: hidden;
 		padding: 20px;
@@ -108,7 +115,6 @@ a {
 
 .row {
 	background-color: $secondary-color;
-	clear: both;
 	overflow: hidden;
 	
 	.col-1 {
@@ -232,12 +238,61 @@ a {
 		width: 100%;
 	}
 
-	
 /*HEADER*/
 
-	// .header_nav {
-	// 	display: block;
-	// }
+	.header_nav {
+		display: block;
+		z-index: 1;
+		position: fixed;
+		padding-left: 30px;
+		margin-top: 3px;
+		background-color: $primary-color;
+		width: 100%;
+		border-bottom: solid #DEDFE2 1px;
+
+		.nav {
+			float: left;
+			display: inline-block;
+			width: 100%;
+
+			.logo {
+				padding-top: 10px;
+			}
+
+			ul {
+				list-style-type: none;
+				display: inline-block;
+
+				li {
+					display: inline-block;
+				}
+			}
+			.upgrade {
+				display: inline-block;
+				float: right;
+				box-sizing: border-box;
+				padding: 16px 60px 16px 20px;
+				border-left: solid #DEDFE2 1px;
+				font-size: .9em;
+			}	
+		}
+	}
+
+.img_links {
+	float: right;
+
+	li {
+		margin-right: 20px;
+	}
+}
+
+.article_pages {
+	font-size: .9em;
+
+	li {
+		margin-left: 30px;
+	}
+}
 
 /*------SIDEBAR------*/
 
@@ -249,7 +304,6 @@ a {
 		padding-left: 25px;
 		overflow: hidden;
 
-
 		ul {
 			list-style-type: none;
 			padding-left: 0;
@@ -260,6 +314,10 @@ a {
 			}
 		}
 	}
+
+	.sidebar_upper_links {
+		margin-top: 70px;
+	}
 	
 	.sidebar_line {
 		border-top: solid #DEDFE2 1px;
@@ -267,7 +325,7 @@ a {
 	}
 
 	.sidebar_lower_links {
-		margin-top: 200px;
+		margin-top: 140px;
 	}
 
 	.sm_text {
@@ -283,12 +341,9 @@ a {
 /*-----MAIN SECTION with MY LISTS and ARTICLES-----*/
 
 	.main_wrapper {
-		padding: 10px 30px 10px 30px;
-		float: right;
+		padding: 60px 30px 10px 30px;
 		box-sizing: border-box;
-		display: inline-block;
 		overflow: hidden;
-
 	}
 
 	.list_header {
@@ -298,6 +353,8 @@ a {
 	.list_header_large {
 		display: inline-block;
 		width: 100%;
+		overflow: hidden;
+		position: fixed;
 
 		ul {
 			padding: 0;
@@ -329,6 +386,7 @@ a {
 		margin-top: 2%;
 		background-color: $primary-color;
 		height: 285px;
+		overflow: hidden;
 
 		.col-1 {
 			@include grid(4);

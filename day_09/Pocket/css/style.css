@@ -1,22 +1,26 @@
 /*-------------Main Body-----*/
 body {
-  background-color: #F4F4F6; }
+  background-color: #F4F4F6;
+  font-family: "Lato", sans-serif; }
 
 .wrapper {
-  width: 400px; }
+  width: 400px;
+  overflow: hidden; }
 
 /*-----------Colorblock Top Border------------*/
-.top_border_wrapper div {
-  width: 25%;
-  float: left; }
-  .top_border_wrapper div:first-child {
-    border-top: solid #B1EBC4 3px; }
-  .top_border_wrapper div:nth-child(2) {
-    border-top: solid #86C3C0 3px; }
-  .top_border_wrapper div:nth-child(3) {
-    border-top: solid #D25B6A 3px; }
-  .top_border_wrapper div:last-child {
-    border-top: solid #EBBE6A 3px; }
+.top_border_wrapper {
+  z-index: 2; }
+  .top_border_wrapper div {
+    width: 25%;
+    float: left; }
+    .top_border_wrapper div:first-child {
+      border-top: solid #B1EBC4 3px; }
+    .top_border_wrapper div:nth-child(2) {
+      border-top: solid #86C3C0 3px; }
+    .top_border_wrapper div:nth-child(3) {
+      border-top: solid #D25B6A 3px; }
+    .top_border_wrapper div:last-child {
+      border-top: solid #EBBE6A 3px; }
 
 /*-------------------------Links Styling--------------------------*/
 a {
@@ -64,7 +68,6 @@ a {
 /*------All the article sections------*/
 .row {
   background-color: #fff;
-  clear: both;
   overflow: hidden; }
   .row .col-1 {
     overflow: hidden;
@@ -155,6 +158,44 @@ a {
     width: 100%; }
 
   /*HEADER*/
+  .header_nav {
+    display: block;
+    z-index: 1;
+    position: fixed;
+    padding-left: 30px;
+    margin-top: 3px;
+    background-color: #F4F4F6;
+    width: 100%;
+    border-bottom: solid #DEDFE2 1px; }
+    .header_nav .nav {
+      float: left;
+      display: inline-block;
+      width: 100%; }
+      .header_nav .nav .logo {
+        padding-top: 10px; }
+      .header_nav .nav ul {
+        list-style-type: none;
+        display: inline-block; }
+        .header_nav .nav ul li {
+          display: inline-block; }
+      .header_nav .nav .upgrade {
+        display: inline-block;
+        float: right;
+        box-sizing: border-box;
+        padding: 16px 60px 16px 20px;
+        border-left: solid #DEDFE2 1px;
+        font-size: .9em; }
+
+  .img_links {
+    float: right; }
+    .img_links li {
+      margin-right: 20px; }
+
+  .article_pages {
+    font-size: .9em; }
+    .article_pages li {
+      margin-left: 30px; }
+
   /*------SIDEBAR------*/
   .sidebar_nav {
     display: inline-block;
@@ -170,12 +211,15 @@ a {
         padding: 10px 0;
         font-size: 0.9em; }
 
+  .sidebar_upper_links {
+    margin-top: 70px; }
+
   .sidebar_line {
     border-top: solid #DEDFE2 1px;
     width: 20px; }
 
   .sidebar_lower_links {
-    margin-top: 200px; }
+    margin-top: 140px; }
 
   .sm_text {
     font-size: .7em;
@@ -187,10 +231,8 @@ a {
 
   /*-----MAIN SECTION with MY LISTS and ARTICLES-----*/
   .main_wrapper {
-    padding: 10px 30px 10px 30px;
-    float: right;
+    padding: 60px 30px 10px 30px;
     box-sizing: border-box;
-    display: inline-block;
     overflow: hidden; }
 
   .list_header {
@@ -198,7 +240,9 @@ a {
 
   .list_header_large {
     display: inline-block;
-    width: 100%; }
+    width: 100%;
+    overflow: hidden;
+    position: fixed; }
     .list_header_large ul {
       padding: 0;
       overflow: hidden;
@@ -218,7 +262,8 @@ a {
   .row {
     margin-top: 2%;
     background-color: #F4F4F6;
-    height: 285px; }
+    height: 285px;
+    overflow: hidden; }
     .row .col-1 {
       width: 32%;
       float: left;
