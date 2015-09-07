@@ -9,7 +9,10 @@ body {
 
 /*-----------Colorblock Top Border------------*/
 .top_border_wrapper {
-  z-index: 2; }
+  z-index: 2;
+  float: left;
+  width: 100%;
+  position: fixed; }
   .top_border_wrapper div {
     width: 25%;
     float: left; }
@@ -40,30 +43,33 @@ a {
   display: none; }
 
 /*------The Header for the small screen navigation------*/
-.list_header ul {
-  overflow: hidden;
-  padding: 20px;
-  margin: 0; }
-  .list_header ul li {
-    text-decoration: none;
-    float: left;
-    display: inline-block; }
-    .list_header ul li:first-child {
-      padding-top: 10px;
-      padding-right: 10px; }
-    .list_header ul li:nth-child(4) {
-      float: right;
-      padding-right: 40px;
-      padding-top: 15px; }
-    .list_header ul li:nth-child(3) {
-      float: right;
-      padding-top: 15px; }
-    .list_header ul li h1 {
-      margin-top: 0;
-      margin-bottom: 0;
-      font-size: 1em;
-      vertical-align: middle;
-      padding-top: 9px; }
+.list_header {
+  width: 400px;
+  background-color: #F4F4F6; }
+  .list_header ul {
+    overflow: hidden;
+    padding: 20px;
+    margin: 0; }
+    .list_header ul li {
+      text-decoration: none;
+      float: left;
+      display: inline-block; }
+      .list_header ul li:first-child {
+        padding-top: 10px;
+        padding-right: 10px; }
+      .list_header ul li:nth-child(4) {
+        float: right;
+        padding-right: 40px;
+        padding-top: 15px; }
+      .list_header ul li:nth-child(3) {
+        float: right;
+        padding-top: 15px; }
+      .list_header ul li h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 1em;
+        vertical-align: middle;
+        padding-top: 9px; }
 
 /*------All the article sections------*/
 .row {

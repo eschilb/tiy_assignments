@@ -18,9 +18,9 @@ body {
 
 .top_border_wrapper	 {
 	z-index: 2;
-	// overflow: hidden;
-	// position: fixed;
-	// box-sizing: border-box;
+	float: left;
+	width: 100%;
+	position: fixed;
 
 	div {
 		width: 25%;
@@ -72,6 +72,10 @@ a {
 /*------The Header for the small screen navigation------*/
 
 .list_header {
+
+	width: 400px;
+	background-color: $primary-color;
+
 
 	ul {
 		overflow: hidden;
