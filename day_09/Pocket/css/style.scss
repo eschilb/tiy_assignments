@@ -72,14 +72,15 @@ a {
 /*------The Header for the small screen navigation------*/
 
 .list_header {
-
 	width: 400px;
 	background-color: $primary-color;
-
+	position: fixed;
+	z-index: 1;
+	border-bottom: solid #E9EAEC 1px;
 
 	ul {
 		overflow: hidden;
-		padding: 20px;
+		padding: 10px 10px 10px 15px;
 		margin: 0;
 
 		li {
@@ -88,19 +89,19 @@ a {
 		display: inline-block;
 
 			&:first-child {
-			padding-top: 10px;
+			padding-top: 8px;
 			padding-right: 10px;
 			}
 
 			&:nth-child(4) {
 			float: right;
 			padding-right: 40px;
-			padding-top: 15px;
+			padding-top: 10px;
 			}
 
 			&:nth-child(3) {
 			float: right;
-			padding-top: 15px;
+			padding-top: 10px;
 			}
 
 			h1 {
@@ -117,13 +118,17 @@ a {
 
 /*------All the article sections------*/
 
+.article_wrapper {
+	padding-top: 51px;
+}
+
 .row {
 	background-color: $secondary-color;
 	overflow: hidden;
 	
 	.col-1 {
 		overflow: hidden;
-		border-top: solid #E9EAEC 2px;
+		border-top: solid #E9EAEC 1px;
 		position: relative;
 
 		div {
@@ -307,6 +312,7 @@ a {
 		box-sizing: border-box;
 		padding-left: 25px;
 		overflow: hidden;
+		position: fixed;
 
 		ul {
 			list-style-type: none;
@@ -345,7 +351,7 @@ a {
 /*-----MAIN SECTION with MY LISTS and ARTICLES-----*/
 
 	.main_wrapper {
-		padding: 60px 30px 10px 30px;
+		padding: 60px 30px 10px 160px;
 		box-sizing: border-box;
 		overflow: hidden;
 	}
@@ -358,7 +364,6 @@ a {
 		display: inline-block;
 		width: 100%;
 		overflow: hidden;
-		position: fixed;
 
 		ul {
 			padding: 0;
@@ -385,6 +390,10 @@ a {
 			}
 		}
 	}
+
+.article_wrapper {
+	padding-top: 0;
+}
 
 	.row {
 		margin-top: 2%;

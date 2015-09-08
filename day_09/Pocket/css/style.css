@@ -45,25 +45,28 @@ a {
 /*------The Header for the small screen navigation------*/
 .list_header {
   width: 400px;
-  background-color: #F4F4F6; }
+  background-color: #F4F4F6;
+  position: fixed;
+  z-index: 1;
+  border-bottom: solid #E9EAEC 1px; }
   .list_header ul {
     overflow: hidden;
-    padding: 20px;
+    padding: 10px 10px 10px 15px;
     margin: 0; }
     .list_header ul li {
       text-decoration: none;
       float: left;
       display: inline-block; }
       .list_header ul li:first-child {
-        padding-top: 10px;
+        padding-top: 8px;
         padding-right: 10px; }
       .list_header ul li:nth-child(4) {
         float: right;
         padding-right: 40px;
-        padding-top: 15px; }
+        padding-top: 10px; }
       .list_header ul li:nth-child(3) {
         float: right;
-        padding-top: 15px; }
+        padding-top: 10px; }
       .list_header ul li h1 {
         margin-top: 0;
         margin-bottom: 0;
@@ -72,12 +75,15 @@ a {
         padding-top: 9px; }
 
 /*------All the article sections------*/
+.article_wrapper {
+  padding-top: 51px; }
+
 .row {
   background-color: #fff;
   overflow: hidden; }
   .row .col-1 {
     overflow: hidden;
-    border-top: solid #E9EAEC 2px;
+    border-top: solid #E9EAEC 1px;
     position: relative; }
     .row .col-1 div p {
       margin: 0; }
@@ -209,7 +215,8 @@ a {
     width: 130px;
     box-sizing: border-box;
     padding-left: 25px;
-    overflow: hidden; }
+    overflow: hidden;
+    position: fixed; }
     .sidebar_nav ul {
       list-style-type: none;
       padding-left: 0; }
@@ -237,7 +244,7 @@ a {
 
   /*-----MAIN SECTION with MY LISTS and ARTICLES-----*/
   .main_wrapper {
-    padding: 60px 30px 10px 30px;
+    padding: 60px 30px 10px 160px;
     box-sizing: border-box;
     overflow: hidden; }
 
@@ -247,8 +254,7 @@ a {
   .list_header_large {
     display: inline-block;
     width: 100%;
-    overflow: hidden;
-    position: fixed; }
+    overflow: hidden; }
     .list_header_large ul {
       padding: 0;
       overflow: hidden;
@@ -264,6 +270,9 @@ a {
         float: right;
         padding-top: 25px;
         padding-right: 30px; }
+
+  .article_wrapper {
+    padding-top: 0; }
 
   .row {
     margin-top: 2%;
