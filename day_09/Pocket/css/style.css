@@ -198,6 +198,9 @@ a {
         border-left: solid #DEDFE2 1px;
         font-size: .9em; }
 
+  .strong {
+    font-weight: bold; }
+
   .img_links {
     float: right; }
     .img_links li {

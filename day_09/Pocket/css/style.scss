@@ -276,6 +276,7 @@ a {
 					display: inline-block;
 				}
 			}
+			
 			.upgrade {
 				display: inline-block;
 				float: right;
@@ -287,21 +288,25 @@ a {
 		}
 	}
 
-.img_links {
-	float: right;
-
-	li {
-		margin-right: 20px;
+	.strong {
+		font-weight: bold;
 	}
-}
 
-.article_pages {
-	font-size: .9em;
+	.img_links {
+		float: right;
 
-	li {
-		margin-left: 30px;
+		li {
+			margin-right: 20px;
+		}
 	}
-}
+
+	.article_pages {
+		font-size: .9em;
+
+		li {
+			margin-left: 30px;
+		}
+	}
 
 /*------SIDEBAR------*/
 
