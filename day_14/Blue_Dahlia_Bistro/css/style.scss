@@ -66,6 +66,27 @@
 	}
 }
 
+/*--FOOTER---*/
+
+.footer {
+	height: 10%;
+	background-color: $logo-color;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+ul {
+	margin: 0 auto;
+	float: left;
+	overflow: hidden;
+	box-sizing: border-box;
+
+	li {
+		text-decoration: none;
+		float: left;
+		display: inline-block;
+	}
+}
 
 /*----FONTS---*/
 
@@ -101,7 +122,7 @@
 	}
 
 	.menu_item_container {
-		padding: 10px 80px;
+		padding: 10px 80px 80px 80px;
 		overflow: hidden;
 		box-sizing: border-box;
 	}

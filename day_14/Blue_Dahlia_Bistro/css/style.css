@@ -45,6 +45,23 @@
   .menu_item .bold {
     font-weight: 600; }
 
+/*--FOOTER---*/
+.footer {
+  height: 10%;
+  background-color: #456672;
+  overflow: hidden;
+  box-sizing: border-box; }
+
+ul {
+  margin: 0 auto;
+  float: left;
+  overflow: hidden;
+  box-sizing: border-box; }
+  ul li {
+    text-decoration: none;
+    float: left;
+    display: inline-block; }
+
 /*----FONTS---*/
 .logo {
   font-family: "Sail", cursive;
@@ -71,7 +88,7 @@
     overflow: hidden; }
 
   .menu_item_container {
-    padding: 10px 80px;
+    padding: 10px 80px 80px 80px;
     overflow: hidden;
     box-sizing: border-box; }
 
