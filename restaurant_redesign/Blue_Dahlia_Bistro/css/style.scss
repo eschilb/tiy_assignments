@@ -1,0 +1,206 @@
+@import 'variables', 'mixin';
+
+
+/*---WRAPPER STYLING-*/
+
+.wrapper {
+	background-color: $background-color;
+	// width: 500px;
+}
+
+/*---HEADER and NAVIGATION--*/
+
+.header {
+	padding-top: 20px;
+	width: 100%;
+	text-align: center;
+
+	.logo {
+		color: $logo-color;
+		text-align: center;
+	}
+
+	.navigation {
+		color: $menu-header-color;
+		padding: 0;
+		margin: 0 auto;
+		font-size: 2em;
+		text-decoration: none;
+
+		&:hover {
+			color: #1a936f;
+		}
+	}
+}
+
+.large_nav {
+	display: none;
+}
+
+/*--MENU--*/
+
+.menu_header {
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)), url(../images/menu_7.jpg) 0 0 no-repeat;
+	background-size: cover;
+	background-position: 60%;
+
+	.menu{
+		color: $background-color;
+		margin: 20px auto 40px auto;
+		text-align: center;
+		padding: 60px;
+	}
+}
+
+.specialities {
+	margin: 0 auto;
+	text-align: center;
+	font-weight: 600;
+	font-size: 1.5em;
+	color: $content-color;
+}
+
+.menu_item_container {
+	padding: 10px 0;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.menu_item {
+	margin: 60px 60px;
+	font-size: 1.125em;
+	color: $content-color;
+	text-align: center;
+
+	.bold {
+		font-weight: bold;
+	}
+}
+
+/*--FOOTER---*/
+
+.footer {
+	height: 10%;
+	background-color: $logo-color;
+	overflow: hidden;
+	box-sizing: border-box;
+	margin: 0 auto;
+	text-align: center;
+}
+
+ul {
+	padding: 0;
+
+	li {
+		text-decoration: none;
+		display: inline-block;
+	}
+}
+
+/*----FONTS---*/
+
+.logo {
+	font-family: $logo-font-family;
+	font-size: 2em;
+}
+
+.menu_item, .navigation, .menu_subheader, a {
+	font-family: $content-font-family;
+}
+
+.menu {
+	font-family: $content-font-family;
+	font-size: 6em;
+}
+
+@media screen and (min-width: 601px) {
+	.wrapper {
+		width: 100%;
+	}
+
+	.logo {
+		font-size: 3em;
+	}
+
+	.menu {
+		font-size: 6em;
+		padding: 80px;
+	}
+
+	.main {
+		overflow: hidden;
+	}
+
+	.menu_item_container {
+		padding: 10px 80px 80px 80px;
+		overflow: hidden;
+		box-sizing: border-box;
+		max-width: 1000px;
+	}
+
+	.col {
+		@include grid1(3);
+
+		.menu_item {
+			margin: 20px 0;
+		}
+	}
+}
+
+@media screen and (min-width: 901px) {
+
+	.header {
+		margin: 0 auto;
+		text-align: center;
+		.logo {
+		font-size: 4em;
+		padding: 0 10px 50px 10px;
+		display: inline-block
+		}
+	}
+
+	.nav_border_right, .nav_border_left {
+		display: inline-block;
+		border-bottom: solid #716865 2px;
+		border-top: solid #716865 2px;
+	}
+
+	.large_nav {
+		display: inline-block;
+		text-decoration: none;
+		color: $menu-header-color;
+		padding: 10px;
+
+		&:hover {
+			color: $hover-color;
+		}
+	}
+
+	.navigation {
+		display: none;
+	}
+
+	.menu_header{
+		.menu {
+			font-size: 9em;
+			padding: 100px;
+		}
+	}
+
+	.specialities {
+		font-size: 2em;
+		padding: 80px 0 40px 0;
+	}
+
+	// .col {
+	// 	@include grid2(2);
+	// 	height: 120px;
+	// }
+}
+
+
+
+
+
