@@ -1,12 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Marvel:700);
 /*---WRAPPER STYLING-*/
+.wrapper {
+  background-color: #EBEDEF; }
+
 /*---HEADER and NAVIGATION--*/
 .header {
-  padding-top: 20px;
+  padding: 20px 0;
   width: 100%;
   text-align: center; }
   .header .logo {
-    color: #0C6A8B;
+    color: #4A9FBD;
     text-align: center; }
   .header .navigation {
     color: #BD684A;
@@ -26,8 +29,8 @@
   background-size: cover;
   background-position: 60%; }
   .menu_header .menu {
-    color: #fff;
-    margin: 20px auto 40px auto;
+    color: #EBEDEF;
+    margin: 0 auto;
     text-align: center;
     padding: 60px; }
 
@@ -54,12 +57,12 @@
 .menu_border {
   margin: 0 auto;
   width: 50%;
-  border-top: solid #0C6A8B 2px; }
+  border-top: solid #4A9FBD 2px; }
 
 /*--FOOTER---*/
 .footer {
   height: 10%;
-  background-color: #0C6A8B;
+  background-color: #4A9FBD;
   overflow: hidden;
   box-sizing: border-box;
   margin: 0 auto;
@@ -76,8 +79,11 @@ ul {
   font-family: "Sail", cursive;
   font-size: 2em; }
 
-.menu_item, .navigation, a {
+.menu_item {
   font-family: "Cabin", serif; }
+
+.navigation, a {
+  font-family: "Marvel", sans-serif; }
 
 .menu {
   font-family: "Marvel", sans-serif;
@@ -93,6 +99,18 @@ ul {
 
   .logo {
     font-size: 3em; }
+
+  .large_nav {
+    display: inline-block;
+    text-decoration: none;
+    color: #EBEDEF;
+    padding: 10px;
+    background-color: #BD684A; }
+    .large_nav:hover {
+      background-color: #4ABDA2; }
+
+  .navigation {
+    display: none; }
 
   .menu {
     font-size: 8em;
@@ -122,31 +140,15 @@ ul {
     text-align: center; }
     .header .logo {
       font-size: 4em;
-      padding: 0 10px 50px 10px;
+      padding: 0;
       display: inline-block; }
-
-  .nav_border_right, .nav_border_left {
-    display: inline-block;
-    border-bottom: solid #716865 2px;
-    border-top: solid #716865 2px; }
-
-  .large_nav {
-    display: inline-block;
-    text-decoration: none;
-    color: #BD684A;
-    padding: 10px; }
-    .large_nav:hover {
-      color: #4ABDA2; }
-
-  .navigation {
-    display: none; }
 
   .menu_header .menu {
     font-size: 9em;
     padding: 100px; }
 
   .specialities {
-    font-size: 2em;
-    padding: 80px 0 40px 0; } }
+    font-size: 3em;
+    padding: 0 0 40px 0; } }
 
 /*# sourceMappingURL=style.css.map */

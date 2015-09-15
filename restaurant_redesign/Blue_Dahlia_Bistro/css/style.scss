@@ -5,14 +5,14 @@
 /*---WRAPPER STYLING-*/
 
 .wrapper {
-	// background-color: $background-color;
+	background-color: $background-color;
 	// width: 500px;
 }
 
 /*---HEADER and NAVIGATION--*/
 
 .header {
-	padding-top: 20px;
+	padding: 20px 0;
 	width: 100%;
 	text-align: center;
 
@@ -47,9 +47,9 @@
 	background-size: cover;
 	background-position: 60%;
 
-	.menu{
-		color: #fff;
-		margin: 20px auto 40px auto;
+	.menu {
+		color: $background-color;
+		margin: 0 auto;
 		text-align: center;
 		padding: 60px;
 	}
@@ -83,7 +83,7 @@
 .menu_border {
 	margin: 0 auto;
 	width: 50%;
-	border-top: solid #0C6A8B 2px;
+	border-top: solid $logo-color 2px;
 }
 
 /*--FOOTER---*/
@@ -113,8 +113,12 @@ ul {
 	font-size: 2em;
 }
 
-.menu_item, .navigation, a {
+.menu_item {
 	font-family: $content-font-family;
+}
+
+.navigation, a {
+	font-family: $content-head-font-family;
 }
 
 .menu {
@@ -134,6 +138,22 @@ ul {
 
 	.logo {
 		font-size: 3em;
+	}
+
+	.large_nav {
+		display: inline-block;
+		text-decoration: none;
+		color: $background-color;
+		padding: 10px;
+		background-color: $menu-header-color;
+
+		&:hover {
+			background-color: $hover-color;
+		}
+	}
+
+	.navigation {
+		display: none;
 	}
 
 	.menu {
@@ -170,31 +190,18 @@ ul {
 		text-align: center;
 		.logo {
 		font-size: 4em;
-		padding: 0 10px 50px 10px;
+		padding: 0;
 		display: inline-block
 		}
 	}
 
-	.nav_border_right, .nav_border_left {
-		display: inline-block;
-		border-bottom: solid #716865 2px;
-		border-top: solid #716865 2px;
-	}
+	// .nav_border_right, .nav_border_left {
+	// 	display: inline-block;
+	// 	border-bottom: solid #716865 2px;
+	// 	border-top: solid #716865 2px;
+	// }
 
-	.large_nav {
-		display: inline-block;
-		text-decoration: none;
-		color: $menu-header-color;
-		padding: 10px;
 
-		&:hover {
-			color: $hover-color;
-		}
-	}
-
-	.navigation {
-		display: none;
-	}
 
 	.menu_header{
 		.menu {
@@ -204,8 +211,8 @@ ul {
 	}
 
 	.specialities {
-		font-size: 2em;
-		padding: 80px 0 40px 0;
+		font-size: 3em;
+		padding: 0 0 40px 0;
 	}
 
 	// .col {
