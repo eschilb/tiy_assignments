@@ -1,0 +1,5 @@
+/*Pop Art Styling for CSS Zen Garden*/
+.banner, .summary, .preamble, .explanation, .participation, .benefits, .requirements, footer {
+  padding: 1em calc(50% - 350px); }
+
+/*# sourceMappingURL=style.css.map */
