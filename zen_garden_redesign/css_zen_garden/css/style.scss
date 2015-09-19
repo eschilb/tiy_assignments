@@ -1,5 +1,167 @@
 /*Pop Art Styling for CSS Zen Garden*/
 
-.banner, .summary, .preamble, .explanation, .participation, .benefits, .requirements, footer {
-	padding: 1em calc(50% - 350px);
+@import url(https://fonts.googleapis.com/css?family=Questrial);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+@import 'normalize';
+
+$red-background: #E70420;
+$blue-background: #009EE3;
+$yellow-background: #FBF3A1;
+$orange-background: #FDB304;
+$green-background: #04C4C7;
+$gray-background: #A6ACAF;
+$light-gray-background: #E5E7E9;
+$lighter-gray-background: #F2F3F4;
+
+$header-font: 'Questrial', sans-serif;
+
+
+body {
+	margin: 0;
 }
+
+header, .summary, .preamble, .explanation, .participation, .benefits, .requirements, .design-selection, .design-archives, .zen-resources, footer {
+	padding: 2em calc(50% - 150px);
+}
+
+/*--Background colors--*/
+
+header {
+	background-color: $red-background;
+	font-family: $header-font;
+}
+
+.summary {
+	background-color: $red-background;
+}
+
+.preamble {
+	background-color: $blue-background;
+}
+
+.explanation {
+	background-color: $yellow-background;
+}
+
+.participation {
+	background-color: $yellow-background;
+}
+
+.benefits {
+	background-color: $gray-background;
+}
+
+.requirements {
+	background-color: $light-gray-background;
+}
+
+.design-selection {
+	background-color: $lighter-gray-background;
+}
+
+.design-archives {
+	background-color: $blue-background;
+}
+
+.zen-resources {
+	background-color: $red-background;
+}
+
+ul {
+	li {
+	list-style-type: none;
+	}
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	border-bottom: solid 1px black;
+}
+
+/*--Fonts--*/
+
+h2 {
+	font-size: 3.5em;
+}
+
+h3 {
+	font-size: 2.5em;
+	font-family: 'Roboto', sans-serif;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+}
+
+/*--trying to get button animation going-*/
+
+.zen-validate-html, 
+.zen-validate-css,
+.zen-license,
+.zen-accessibility,
+.zen-github {
+	position: relative;
+	border: 6px solid black;
+	// z-index: 2;
+	padding: 12px 22px;
+	margin: 20px auto;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: black;
+	display: block;
+	max-width: 25%;
+	}
+
+.zen-validate-html:hover:before, 
+.zen-validate-css:hover:before,
+.zen-license:hover:before,
+.zen-accessibility:hover:before,
+.zen-github:hover:before {
+	top: 0;
+	left: 0;
+	width: 102%;
+	height: 100%;
+	}
+
+.zen-validate-html:hover:active, 
+.zen-validate-css:hover:active,
+.zen-license:hover:active,
+.zen-accessibility:hover:active,
+.zen-github:hover:active {
+	top: -10px;
+	left: 18px;
+	width: 102%;
+	height: 100%;
+	}
+
+.zen-validate-html:before, 
+.zen-validate-css:before,
+.zen-license:before,
+.zen-accessibility:before,
+.zen-github:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 12px;
+	left: -14px;
+	width: calc(100% + 6px);
+	height: calc(100% + 6px);
+	background-color: #f9d159;
+	-webkit-transition: all 0.3s ease;
+	      transition: all 0.3s ease;
+	}
+
+.zen-validate-html:before,
+.zen-github:before {
+	background-color: $yellow-background;
+	}
+
+.zen-validate-css:before, .zen-accessibility:before {
+	background-color: $red-background;
+	}
+
+.zen-license:before {
+	background-color: $blue-background;
+	}
+
