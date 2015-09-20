@@ -1,6 +1,5 @@
 /*Pop Art Styling for CSS Zen Garden*/
-@import url(https://fonts.googleapis.com/css?family=Questrial);
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto+Mono|Roboto:300|Questrial);
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -359,6 +358,7 @@ td,
 th {
   padding: 0; }
 
+/*--Small screen padding--*/
 body {
   margin: 0; }
 
@@ -368,42 +368,96 @@ header, .summary, .preamble, .explanation, .participation, .benefits, .requireme
 /*--Background colors--*/
 header {
   background-color: #E70420;
-  font-family: "Questrial", sans-serif; }
+  font-family: "Questrial", sans-serif;
+  color: #fff;
+  border-top: 26px solid black; }
 
 .summary {
-  background-color: #E70420; }
+  background-color: #E70420;
+  border-bottom: 26px solid black; }
 
-.preamble {
-  background-color: #009EE3; }
+.preamble, .requirements {
+  background-color: #009EE3;
+  border-bottom: 26px solid black; }
 
+/*--Border striped background Explanation--*/
 .explanation {
-  background-color: #FBF3A1; }
+  background: repeating-linear-gradient(60deg, white, white 15px, black 0, black 30px); }
+
+.explanation h3, .explanation p {
+  background-color: #fcd230;
+  padding: 30px;
+  margin: 0;
+  box-shadow: 0 10px 4px -4px black; }
 
 .participation {
-  background-color: #FBF3A1; }
+  background-color: #fcd230;
+  border-bottom: 26px solid black; }
 
 .benefits {
-  background-color: #A6ACAF; }
-
-.requirements {
-  background-color: #E5E7E9; }
+  background: #E70420;
+  border-bottom: 26px solid black; }
+  .benefits h3, .benefits p {
+    color: white; }
 
 .design-selection {
-  background-color: #F2F3F4; }
+  background: #fcd230;
+  background-image: radial-gradient(black 40%, transparent 0), radial-gradient(black 40%, transparent 0);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  border-top: 26px solid black; }
+  .design-selection h3, .design-selection nav > ul {
+    background-color: white;
+    margin: 0;
+    padding: 10px;
+    box-shadow: 0 10px 4px -4px black; }
 
 .design-archives {
-  background-color: #009EE3; }
+  background: #009EE3;
+  background-image: radial-gradient(white 30%, transparent 0), radial-gradient(white 30%, transparent 0);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  border-bottom: 26px solid black;
+  border-top: 26px solid black; }
+  .design-archives h3, .design-archives nav > ul {
+    background-color: white;
+    margin: 0;
+    padding: 10px;
+    box-shadow: 0 10px 4px -4px black; }
 
 .zen-resources {
-  background-color: #E70420; }
+  background: #E70420;
+  background-image: radial-gradient(white 20%, transparent 0), radial-gradient(white 20%, transparent 0);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  border-bottom: 26px solid black; }
+  .zen-resources h3, .zen-resources ul {
+    background-color: white;
+    margin: 0;
+    padding: 10px;
+    box-shadow: 0 10px 4px -4px black; }
 
-ul li {
-  list-style-type: none; }
+/*--Links styling--*/
+ul {
+  -webkit-padding-start: 0; }
+  ul li {
+    list-style-type: none;
+    padding: 10px 0;
+    font-family: "Roboto", sans-serif; }
 
 a {
   color: black;
   text-decoration: none;
-  border-bottom: solid 1px black; }
+  border-bottom: solid 1px black;
+  padding-bottom: 2px;
+  line-height: 1.5em; }
+
+header a:hover, .summary a:hover, .preamble a:hover, .explanation a:hover, .participation a:hover, .benefits a:hover, .requirements a:hover, .design-selection a:hover, .design-archives a:hover, .zen-resources a:hover {
+  color: #A6ACAF;
+  border-bottom: solid 1px #A6ACAF; }
+
+abbr[title] {
+  border-bottom: none; }
 
 /*--Fonts--*/
 h2 {
@@ -411,12 +465,14 @@ h2 {
 
 h3 {
   font-size: 2.5em;
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto Condensed", sans-serif; }
 
 p {
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5em;
+  font-size: .9em; }
 
-/*--trying to get button animation going-*/
+/*--button animation-*/
 .zen-validate-html,
 .zen-validate-css,
 .zen-license,
@@ -430,7 +486,10 @@ p {
   text-decoration: none;
   color: black;
   display: block;
-  max-width: 25%; }
+  max-width: 30%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  text-align: center; }
 
 .zen-validate-html:hover:before,
 .zen-validate-css:hover:before,
@@ -470,12 +529,32 @@ p {
 
 .zen-validate-html:before,
 .zen-github:before {
-  background-color: #FBF3A1; }
+  background-color: #fcd230; }
 
 .zen-validate-css:before, .zen-accessibility:before {
   background-color: #E70420; }
 
 .zen-license:before {
   background-color: #009EE3; }
+
+@media screen and (min-width: 601px) {
+  header, .summary, .preamble, .explanation, .participation, .benefits, .requirements, .design-selection, .design-archives, .zen-resources {
+    padding: 2em calc(50% - 250px); }
+
+  footer {
+    padding: 10px;
+    display: inline-block; }
+
+  .zen-validate-html,
+  .zen-validate-css,
+  .zen-license,
+  .zen-accessibility,
+  .zen-github {
+    margin: 50px 20px;
+    display: inline-block; }
+
+  .explanation p, .explanation nav ul, .explanation ul, .participation p, .participation nav ul, .participation ul, .benefits p, .benefits nav ul, .benefits ul, .requirements p, .requirements nav ul, .requirements ul, .design-selection p, .design-selection nav ul, .design-selection ul, .design-archives p, .design-archives nav ul, .design-archives ul, .zen-resources p, .zen-resources nav ul, .zen-resources ul {
+    padding: 30px 30px 30px 100px;
+    margin: 0; } }
 
 /*# sourceMappingURL=style.css.map */

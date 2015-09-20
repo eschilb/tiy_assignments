@@ -1,20 +1,22 @@
 /*Pop Art Styling for CSS Zen Garden*/
 
-@import url(https://fonts.googleapis.com/css?family=Questrial);
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto+Mono|Roboto:300|Questrial);
 @import 'normalize';
 
 $red-background: #E70420;
 $blue-background: #009EE3;
-$yellow-background: #FBF3A1;
+$yellow-background: #fcd230;
 $orange-background: #FDB304;
 $green-background: #04C4C7;
 $gray-background: #A6ACAF;
-$light-gray-background: #E5E7E9;
-$lighter-gray-background: #F2F3F4;
 
 $header-font: 'Questrial', sans-serif;
+$subheader-font: 'Roboto Condensed', sans-serif;
+$body-font: 'Roboto', sans-serif;
 
+$header-font-color: #fff;
+
+/*--Small screen padding--*/
 
 body {
 	margin: 0;
@@ -26,50 +28,116 @@ header, .summary, .preamble, .explanation, .participation, .benefits, .requireme
 
 /*--Background colors--*/
 
+
 header {
 	background-color: $red-background;
 	font-family: $header-font;
+	color: $header-font-color;
+	border-top: 26px solid black;
 }
 
 .summary {
 	background-color: $red-background;
+	border-bottom: 26px solid black;
 }
 
-.preamble {
+.preamble, .requirements {
 	background-color: $blue-background;
+	border-bottom: 26px solid black;
+}
+
+/*--Border striped background Explanation--*/
+
+.explanation {
+	background: repeating-linear-gradient(60deg, 
+    white, white 15px,
+    black 0, black 30px)
 }
 
 .explanation {
+
+	h3, p {
 	background-color: $yellow-background;
+	padding: 30px;
+	margin: 0;
+	box-shadow: 0 10px 4px -4px black;
+}
 }
 
 .participation {
 	background-color: $yellow-background;
+	border-bottom: 26px solid black;
 }
 
 .benefits {
-	background-color: $gray-background;
+	background: $red-background;
+	border-bottom: 26px solid black;
+
+	h3, p {
+		color: white;
+	}
 }
 
-.requirements {
-	background-color: $light-gray-background;
-}
 
 .design-selection {
-	background-color: $lighter-gray-background;
+	background: $yellow-background;
+	background-image: radial-gradient(black 40%, transparent 0),
+    radial-gradient(black 40%, transparent 0);
+	background-size: 30px 30px;
+	background-position: 0 0, 15px 15px;
+	border-top: 26px solid black;
+
+	h3, nav > ul {
+		background-color: white;
+		margin: 0;
+		padding: 10px;
+		box-shadow: 0 10px 4px -4px black;
+	}
 }
 
 .design-archives {
-	background-color: $blue-background;
+	background: $blue-background;
+	background-image: radial-gradient(white 30%, transparent 0),
+    radial-gradient(white 30%, transparent 0);
+	background-size: 30px 30px;
+	background-position: 0 0, 15px 15px;
+	border-bottom: 26px solid black;
+	border-top: 26px solid black;
+
+	h3, nav > ul {
+		background-color: white;
+		margin: 0;
+		padding: 10px;
+		box-shadow: 0 10px 4px -4px black;
+	}
 }
 
 .zen-resources {
-	background-color: $red-background;
+	background: $red-background;
+	background-image: radial-gradient(white 20%, transparent 0),
+    radial-gradient(white 20%, transparent 0);
+	background-size: 30px 30px;
+	background-position: 0 0, 15px 15px;
+	border-bottom: 26px solid black;
+
+
+		h3, ul {
+		background-color: white;
+		margin: 0;
+		padding: 10px;
+		box-shadow: 0 10px 4px -4px black
+	}
 }
 
+
+/*--Links styling--*/
+
 ul {
+	-webkit-padding-start: 0;
 	li {
 	list-style-type: none;
+	padding: 10px 0;
+	font-family: $body-font;
 	}
 }
 
@@ -77,6 +145,20 @@ a {
 	color: black;
 	text-decoration: none;
 	border-bottom: solid 1px black;
+	padding-bottom: 2px;
+	line-height: 1.5em;
+}
+
+header, .summary, .preamble, .explanation, .participation, .benefits, .requirements, .design-selection, .design-archives, .zen-resources {
+	a {
+		&:hover {
+		color: $gray-background;
+		border-bottom: solid 1px $gray-background;
+		}
+	}
+}
+abbr[title] {
+	border-bottom: none;
 }
 
 /*--Fonts--*/
@@ -87,14 +169,16 @@ h2 {
 
 h3 {
 	font-size: 2.5em;
-	font-family: 'Roboto', sans-serif;
+	font-family: $subheader-font;
 }
 
 p {
-	font-family: 'Roboto', sans-serif;
+	font-family: $body-font;
+	line-height: 1.5em;
+	font-size: .9em;
 }
 
-/*--trying to get button animation going-*/
+/*--button animation-*/
 
 .zen-validate-html, 
 .zen-validate-css,
@@ -110,7 +194,10 @@ p {
 	text-decoration: none;
 	color: black;
 	display: block;
-	max-width: 25%;
+	max-width: 30%;
+	font-family: $subheader-font;
+	font-weight: 700;
+	text-align: center;
 	}
 
 .zen-validate-html:hover:before, 
@@ -165,3 +252,34 @@ p {
 	background-color: $blue-background;
 	}
 
+
+
+@media screen and (min-width: 601px) {
+
+
+	header, .summary, .preamble, .explanation, .participation, .benefits, .requirements, .design-selection, .design-archives, .zen-resources {
+		padding: 2em calc(50% - 250px);
+	}
+
+	footer {
+		padding: 10px;
+		display: inline-block;
+	}
+
+	.zen-validate-html, 
+	.zen-validate-css,
+	.zen-license,
+	.zen-accessibility,
+	.zen-github {
+		margin: 50px 20px;
+		display: inline-block;
+	}
+
+	.explanation, .participation, .benefits, .requirements, .design-selection, .design-archives, .zen-resources {
+		p, nav ul, ul {
+			padding: 30px 30px 30px 100px;
+			margin: 0;
+		}
+	}
+	
+}
