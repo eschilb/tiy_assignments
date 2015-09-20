@@ -36,14 +36,39 @@ header {
 	border-top: 26px solid black;
 }
 
+header:after {
+	content: "POP AT YOUR OWN RISK";
+	margin: 0 auto;
+	display: block;
+	color: $blue-background;
+	font-size: 3em;
+	font-family: $subheader-font;
+	font-weight: 700;
+	width: 100px;
+	text-align: center;
+	padding-left: 0;
+	text-shadow: 1px 1px $yellow-background, 2px 2px $yellow-background, 3px 3px $yellow-background, 4px 4px $yellow-background, 5px 5px $yellow-background, 6px 6px $yellow-background, 7px 7px $yellow-background, 8px 8px $yellow-background, 9px 9px $yellow-background, 10px 10px $yellow-background, 11px 11px $yellow-background, 12px 12px $yellow-background, 13px 13px $yellow-background, 14px 14px $yellow-background, 15px 15px $yellow-background, 16px 16px $yellow-background, 17px 17px $yellow-background, 18px 18px $yellow-background, 19px 19px $yellow-background, 20px 20px $yellow-background, 21px 21px $yellow-background, 22px 22px $yellow-background, 23px 23px $yellow-background, 24px 24px $yellow-background, 25px 25px $yellow-background, 26px 26px 6px #06520C;
+}
+
 .summary {
 	background-color: $red-background;
 	border-bottom: 26px solid black;
+	font-size: 1em;
+	color: white;
+
+	a {
+		color: #fff;
+		border-bottom: solid 1px #fff;
+	}
 }
 
 .preamble, .requirements {
 	background-color: $blue-background;
 	border-bottom: 26px solid black;
+
+	h3 {
+		text-shadow: 1px 1px $yellow-background, 2px 0 $yellow-background;
+	}
 }
 
 /*--Border striped background Explanation--*/
@@ -61,12 +86,19 @@ header {
 	padding: 30px;
 	margin: 0;
 	box-shadow: 0 10px 4px -4px black;
-}
+	}
+	h3 {
+    	text-shadow: 1px 1px #fff, 2px 0 #fff;
+	}
 }
 
 .participation {
 	background-color: $yellow-background;
 	border-bottom: 26px solid black;
+
+	h3 {
+    	text-shadow: 1px 1px #fff, 2px 0 #fff;
+	}
 }
 
 .benefits {
@@ -75,6 +107,10 @@ header {
 
 	h3, p {
 		color: white;
+	}
+
+	h3 {
+    	text-shadow: 1px 1px $blue-background, 2px 0 $blue-background;
 	}
 }
 
@@ -256,10 +292,43 @@ p {
 
 @media screen and (min-width: 601px) {
 
+		header:after {
+			content: "POP AT YOUR OWN RISK";
+			margin: 0 auto;
+			display: block;
+			color: $blue-background;
+			font-size: 7em;
+			font-family: $subheader-font;
+			font-weight: 700;
+			width: 300px;
+			text-align: center;
+			padding-left: 0;
+			text-shadow: 1px 1px $yellow-background, 2px 2px $yellow-background, 3px 3px $yellow-background, 4px 4px $yellow-background, 5px 5px $yellow-background, 6px 6px $yellow-background, 7px 7px $yellow-background, 8px 8px $yellow-background, 9px 9px $yellow-background, 10px 10px $yellow-background, 11px 11px $yellow-background, 12px 12px $yellow-background, 13px 13px $yellow-background, 14px 14px $yellow-background, 15px 15px $yellow-background, 16px 16px $yellow-background, 17px 17px $yellow-background, 18px 18px $yellow-background, 19px 19px $yellow-background, 20px 20px $yellow-background, 21px 21px $yellow-background, 22px 22px $yellow-background, 23px 23px $yellow-background, 24px 24px $yellow-background, 25px 25px $yellow-background, 26px 26px 6px #06520C;
+		}
 
-	header, .summary, .preamble, .explanation, .participation, .benefits, .requirements, .design-selection, .design-archives, .zen-resources {
+
+	.summary, .preamble, .explanation, .participation, .benefits, .requirements, .design-selection, .design-archives, .zen-resources {
 		padding: 2em calc(50% - 250px);
 	}
+
+	header {
+		padding: 20px;
+
+		h1 {
+			display: inline-block;
+			float: left;
+			padding-bottom: 20px;
+		}
+
+		h2 {
+			text-align: center;
+			margin: 0 auto;
+			display: block;
+			clear: both;
+		}
+	}
+
+
 
 	footer {
 		padding: 10px;
@@ -281,5 +350,38 @@ p {
 			margin: 0;
 		}
 	}
+}
+
+@media screen and (min-width: 901px) {
 	
+	header {
+
+		h2 {
+			padding: 40px;
+		}
+	}
+
+	.sidebar {
+		width: 25%;
+		display: inline-block;
+		float: right;
+		padding: 0;
+		.design-selection, .design-archives, .zen-resources {
+			padding: 20px;
+			background: none;
+			border: none;
+			
+			ul {
+				box-shadow: none; 
+			}
+		}
+	}
+	.main {
+		width: 75%;
+		float: left;
+	}
+
+	.requirements {
+		border-bottom: none;
+	}
 }
