@@ -580,6 +580,7 @@ p {
     transition-delay: 5s; }
 
   header:hover:after {
+    color: #00577d;
     text-shadow: 1px 1px #04C4C7, 2px 2px #04C4C7, 3px 3px #04C4C7, 4px 4px #04C4C7, 5px 5px #04C4C7, 6px 6px #04C4C7, 7px 7px #04C4C7, 8px 8px #04C4C7, 9px 9px #04C4C7, 10px 10px #04C4C7, 11px 11px #04C4C7, 12px 12px #04C4C7, 13px 13px #04C4C7, 14px 14px #04C4C7, 15px 15px #04C4C7, 16px 16px #04C4C7, 17px 17px #04C4C7, 18px 18px #04C4C7, 19px 19px #04C4C7, 20px 20px #04C4C7, 21px 21px #04C4C7, 22px 22px #04C4C7, 23px 23px #04C4C7, 24px 24px #04C4C7, 25px 25px #04C4C7, 26px 26px 6px black; }
 
   .summary, .preamble, .explanation, .participation, .benefits, .requirements, .design-selection, .design-archives, .zen-resources {

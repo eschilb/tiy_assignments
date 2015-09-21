@@ -363,6 +363,7 @@ p {
 		}
 
 	header:hover:after {
+		color: darken($blue-background, 20%);
 		text-shadow: 1px 1px $green-background, 
 		2px 2px $green-background, 
 		3px 3px $green-background, 
