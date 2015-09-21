@@ -1,6 +1,6 @@
 /*Pop Art Styling for CSS Zen Garden*/
 
-@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto+Mono|Roboto:300|Questrial);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:300|Rubik);
 @import 'normalize', 'variables';
 
 
@@ -26,6 +26,7 @@ header {
 	font-family: $header-font;
 	color: $header-font-color;
 	border-top: 26px solid black;
+	text-shadow: 1px 1px $blue-background, 2px 0 $blue-background;
 }
 
 header:after {
