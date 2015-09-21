@@ -362,7 +362,10 @@ th {
 body {
   margin: 0; }
 
-header, .summary, .preamble, .explanation, .participation, .benefits, .requirements, .design-selection, .design-archives, .zen-resources, footer {
+header, .summary, .preamble, .explanation, .participation, .benefits, .requirements, .design-selection, .design-archives, .zen-resources {
+  padding: 2em 1em; }
+
+footer {
   padding: 2em calc(50% - 150px); }
 
 /*--Background colors--*/
