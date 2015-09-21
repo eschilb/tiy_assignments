@@ -1,20 +1,8 @@
 /*Pop Art Styling for CSS Zen Garden*/
 
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto+Mono|Roboto:300|Questrial);
-@import 'normalize';
+@import 'normalize', 'variables';
 
-$red-background: #E70420;
-$blue-background: #009EE3;
-$yellow-background: #fcd230;
-$orange-background: #FDB304;
-$green-background: #04C4C7;
-$gray-background: #A6ACAF;
-
-$header-font: 'Questrial', sans-serif;
-$subheader-font: 'Roboto Condensed', sans-serif;
-$body-font: 'Roboto', sans-serif;
-
-$header-font-color: #fff;
 
 /*--Small screen padding--*/
 
@@ -51,7 +39,32 @@ header:after {
 	width: 100px;
 	text-align: center;
 	padding-left: 0;
-	text-shadow: 1px 1px $yellow-background, 2px 2px $yellow-background, 3px 3px $yellow-background, 4px 4px $yellow-background, 5px 5px $yellow-background, 6px 6px $yellow-background, 7px 7px $yellow-background, 8px 8px $yellow-background, 9px 9px $yellow-background, 10px 10px $yellow-background, 11px 11px $yellow-background, 12px 12px $yellow-background, 13px 13px $yellow-background, 14px 14px $yellow-background, 15px 15px $yellow-background, 16px 16px $yellow-background, 17px 17px $yellow-background, 18px 18px $yellow-background, 19px 19px $yellow-background, 20px 20px $yellow-background, 21px 21px $yellow-background, 22px 22px $yellow-background, 23px 23px $yellow-background, 24px 24px $yellow-background, 25px 25px $yellow-background, 26px 26px 6px #06520C;
+	text-shadow: 1px 1px $yellow-background, 
+		2px 2px $yellow-background, 
+		3px 3px $yellow-background, 
+		4px 4px $yellow-background, 
+		5px 5px $yellow-background, 
+		6px 6px $yellow-background, 
+		7px 7px $yellow-background, 
+		8px 8px $yellow-background, 
+		9px 9px $yellow-background, 
+		10px 10px $yellow-background, 
+		11px 11px $yellow-background, 
+		12px 12px $yellow-background, 
+		13px 13px $yellow-background, 
+		14px 14px $yellow-background, 
+		15px 15px $yellow-background, 
+		16px 16px $yellow-background, 
+		17px 17px $yellow-background, 
+		18px 18px $yellow-background, 
+		19px 19px $yellow-background, 
+		20px 20px $yellow-background, 
+		21px 21px $yellow-background, 
+		22px 22px $yellow-background, 
+		23px 23px $yellow-background, 
+		24px 24px $yellow-background, 
+		25px 25px $yellow-background, 
+		26px 26px 6px darken($yellow-background, 60%);
 }
 
 .summary {
@@ -121,10 +134,10 @@ header:after {
 
 .design-selection {
 	background: $yellow-background;
-	background-image: radial-gradient(black 40%, transparent 0),
-    radial-gradient(black 40%, transparent 0);
-	background-size: 30px 30px;
-	background-position: 0 0, 15px 15px;
+	// background-image: radial-gradient(black 40%, transparent 0),
+ //    radial-gradient(black 40%, transparent 0);
+	// background-size: 30px 30px;
+	// background-position: 0 0, 15px 15px;
 	border-top: 26px solid black;
 
 	h3, nav > ul {
@@ -132,15 +145,19 @@ header:after {
 		margin: 0;
 		padding: 10px;
 		box-shadow: 0 10px 4px -4px black;
+	}
+
+	h3 {
+    	text-shadow: 1px 1px $blue-background, 2px 0 $blue-background;
 	}
 }
 
 .design-archives {
 	background: $blue-background;
-	background-image: radial-gradient(white 30%, transparent 0),
-    radial-gradient(white 30%, transparent 0);
-	background-size: 30px 30px;
-	background-position: 0 0, 15px 15px;
+	// background-image: radial-gradient(white 30%, transparent 0),
+ //    radial-gradient(white 30%, transparent 0);
+	// background-size: 30px 30px;
+	// background-position: 0 0, 15px 15px;
 	border-bottom: 26px solid black;
 	border-top: 26px solid black;
 
@@ -150,22 +167,30 @@ header:after {
 		padding: 10px;
 		box-shadow: 0 10px 4px -4px black;
 	}
+
+	h3 {
+    	text-shadow: 1px 1px $blue-background, 2px 0 $blue-background;
+	}
 }
 
 .zen-resources {
 	background: $red-background;
-	background-image: radial-gradient(white 20%, transparent 0),
-    radial-gradient(white 20%, transparent 0);
-	background-size: 30px 30px;
-	background-position: 0 0, 15px 15px;
+	// background-image: radial-gradient(white 20%, transparent 0),
+ //    radial-gradient(white 20%, transparent 0);
+	// background-size: 30px 30px;
+	// background-position: 0 0, 15px 15px;
 	border-bottom: 26px solid black;
 
 
-		h3, ul {
+	h3, ul {
 		background-color: white;
 		margin: 0;
 		padding: 10px;
 		box-shadow: 0 10px 4px -4px black
+	}
+
+	h3 {
+    	text-shadow: 1px 1px $blue-background, 2px 0 $blue-background;
 	}
 }
 
@@ -296,19 +321,75 @@ p {
 
 @media screen and (min-width: 601px) {
 
-		header:after {
-			content: "POP AT YOUR OWN RISK";
-			margin: 0 auto;
-			display: block;
-			color: $blue-background;
-			font-size: 7em;
-			font-family: $subheader-font;
-			font-weight: 700;
-			width: 300px;
-			text-align: center;
-			padding-left: 0;
-			text-shadow: 1px 1px $yellow-background, 2px 2px $yellow-background, 3px 3px $yellow-background, 4px 4px $yellow-background, 5px 5px $yellow-background, 6px 6px $yellow-background, 7px 7px $yellow-background, 8px 8px $yellow-background, 9px 9px $yellow-background, 10px 10px $yellow-background, 11px 11px $yellow-background, 12px 12px $yellow-background, 13px 13px $yellow-background, 14px 14px $yellow-background, 15px 15px $yellow-background, 16px 16px $yellow-background, 17px 17px $yellow-background, 18px 18px $yellow-background, 19px 19px $yellow-background, 20px 20px $yellow-background, 21px 21px $yellow-background, 22px 22px $yellow-background, 23px 23px $yellow-background, 24px 24px $yellow-background, 25px 25px $yellow-background, 26px 26px 6px #06520C;
+	header:after {
+		content: "POP AT YOUR OWN RISK";
+		margin: 0 auto;
+		display: block;
+		color: $blue-background;
+		font-size: 7em;
+		font-family: $subheader-font;
+		font-weight: 700;
+		width: 300px;
+		text-align: center;
+		padding-left: 0;
+		text-shadow: 1px 1px $yellow-background, 
+			2px 2px $yellow-background, 
+			3px 3px $yellow-background, 
+			4px 4px $yellow-background, 
+			5px 5px $yellow-background, 
+			6px 6px $yellow-background, 
+			7px 7px $yellow-background, 
+			8px 8px $yellow-background, 
+			9px 9px $yellow-background, 
+			10px 10px $yellow-background, 
+			11px 11px $yellow-background, 
+			12px 12px $yellow-background, 
+			13px 13px $yellow-background, 
+			14px 14px $yellow-background, 
+			15px 15px $yellow-background, 
+			16px 16px $yellow-background, 
+			17px 17px $yellow-background, 
+			18px 18px $yellow-background, 
+			19px 19px $yellow-background, 
+			20px 20px $yellow-background, 
+			21px 21px $yellow-background, 
+			22px 22px $yellow-background, 
+			23px 23px $yellow-background, 
+			24px 24px $yellow-background, 
+			25px 25px $yellow-background, 
+			26px 26px 6px darken($yellow-background, 60%);
+		transition: 4s ease;
+		transition-delay: 5s;
 		}
+
+	header:hover:after {
+		text-shadow: 1px 1px $green-background, 
+		2px 2px $green-background, 
+		3px 3px $green-background, 
+		4px 4px $green-background, 
+		5px 5px $green-background, 
+		6px 6px $green-background, 
+		7px 7px $green-background, 
+		8px 8px $green-background, 
+		9px 9px $green-background, 
+		10px 10px $green-background, 
+		11px 11px $green-background, 
+		12px 12px $green-background, 
+		13px 13px $green-background, 
+		14px 14px $green-background, 
+		15px 15px $green-background, 
+		16px 16px $green-background, 
+		17px 17px $green-background, 
+		18px 18px $green-background, 
+		19px 19px $green-background, 
+		20px 20px $green-background, 
+		21px 21px $green-background, 
+		22px 22px $green-background, 
+		23px 23px $green-background, 
+		24px 24px $green-background, 
+		25px 25px $green-background, 
+		26px 26px 6px darken($green-background, 60%);
+	}
 
 
 	.summary, .preamble, .explanation, .participation, .benefits, .requirements, .design-selection, .design-archives, .zen-resources {
@@ -374,6 +455,10 @@ p {
 			padding: 20px;
 			background: none;
 			border: none;
+
+			p, nav ul, ul {
+				padding: 30px;
+			}
 			
 			ul {
 				box-shadow: none; 

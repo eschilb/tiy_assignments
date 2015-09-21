@@ -386,7 +386,7 @@ header:after {
   width: 100px;
   text-align: center;
   padding-left: 0;
-  text-shadow: 1px 1px #fcd230, 2px 2px #fcd230, 3px 3px #fcd230, 4px 4px #fcd230, 5px 5px #fcd230, 6px 6px #fcd230, 7px 7px #fcd230, 8px 8px #fcd230, 9px 9px #fcd230, 10px 10px #fcd230, 11px 11px #fcd230, 12px 12px #fcd230, 13px 13px #fcd230, 14px 14px #fcd230, 15px 15px #fcd230, 16px 16px #fcd230, 17px 17px #fcd230, 18px 18px #fcd230, 19px 19px #fcd230, 20px 20px #fcd230, 21px 21px #fcd230, 22px 22px #fcd230, 23px 23px #fcd230, 24px 24px #fcd230, 25px 25px #fcd230, 26px 26px 6px #06520C; }
+  text-shadow: 1px 1px #fcd230, 2px 2px #fcd230, 3px 3px #fcd230, 4px 4px #fcd230, 5px 5px #fcd230, 6px 6px #fcd230, 7px 7px #fcd230, 8px 8px #fcd230, 9px 9px #fcd230, 10px 10px #fcd230, 11px 11px #fcd230, 12px 12px #fcd230, 13px 13px #fcd230, 14px 14px #fcd230, 15px 15px #fcd230, 16px 16px #fcd230, 17px 17px #fcd230, 18px 18px #fcd230, 19px 19px #fcd230, 20px 20px #fcd230, 21px 21px #fcd230, 22px 22px #fcd230, 23px 23px #fcd230, 24px 24px #fcd230, 25px 25px #fcd230, 26px 26px 6px black; }
 
 .summary {
   background-color: #E70420;
@@ -431,21 +431,17 @@ header:after {
 
 .design-selection {
   background: #fcd230;
-  background-image: radial-gradient(black 40%, transparent 0), radial-gradient(black 40%, transparent 0);
-  background-size: 30px 30px;
-  background-position: 0 0, 15px 15px;
   border-top: 26px solid black; }
   .design-selection h3, .design-selection nav > ul {
     background-color: white;
     margin: 0;
     padding: 10px;
     box-shadow: 0 10px 4px -4px black; }
+  .design-selection h3 {
+    text-shadow: 1px 1px #009EE3, 2px 0 #009EE3; }
 
 .design-archives {
   background: #009EE3;
-  background-image: radial-gradient(white 30%, transparent 0), radial-gradient(white 30%, transparent 0);
-  background-size: 30px 30px;
-  background-position: 0 0, 15px 15px;
   border-bottom: 26px solid black;
   border-top: 26px solid black; }
   .design-archives h3, .design-archives nav > ul {
@@ -453,18 +449,19 @@ header:after {
     margin: 0;
     padding: 10px;
     box-shadow: 0 10px 4px -4px black; }
+  .design-archives h3 {
+    text-shadow: 1px 1px #009EE3, 2px 0 #009EE3; }
 
 .zen-resources {
   background: #E70420;
-  background-image: radial-gradient(white 20%, transparent 0), radial-gradient(white 20%, transparent 0);
-  background-size: 30px 30px;
-  background-position: 0 0, 15px 15px;
   border-bottom: 26px solid black; }
   .zen-resources h3, .zen-resources ul {
     background-color: white;
     margin: 0;
     padding: 10px;
     box-shadow: 0 10px 4px -4px black; }
+  .zen-resources h3 {
+    text-shadow: 1px 1px #009EE3, 2px 0 #009EE3; }
 
 /*--Links styling--*/
 ul {
@@ -578,7 +575,12 @@ p {
     width: 300px;
     text-align: center;
     padding-left: 0;
-    text-shadow: 1px 1px #fcd230, 2px 2px #fcd230, 3px 3px #fcd230, 4px 4px #fcd230, 5px 5px #fcd230, 6px 6px #fcd230, 7px 7px #fcd230, 8px 8px #fcd230, 9px 9px #fcd230, 10px 10px #fcd230, 11px 11px #fcd230, 12px 12px #fcd230, 13px 13px #fcd230, 14px 14px #fcd230, 15px 15px #fcd230, 16px 16px #fcd230, 17px 17px #fcd230, 18px 18px #fcd230, 19px 19px #fcd230, 20px 20px #fcd230, 21px 21px #fcd230, 22px 22px #fcd230, 23px 23px #fcd230, 24px 24px #fcd230, 25px 25px #fcd230, 26px 26px 6px #06520C; }
+    text-shadow: 1px 1px #fcd230, 2px 2px #fcd230, 3px 3px #fcd230, 4px 4px #fcd230, 5px 5px #fcd230, 6px 6px #fcd230, 7px 7px #fcd230, 8px 8px #fcd230, 9px 9px #fcd230, 10px 10px #fcd230, 11px 11px #fcd230, 12px 12px #fcd230, 13px 13px #fcd230, 14px 14px #fcd230, 15px 15px #fcd230, 16px 16px #fcd230, 17px 17px #fcd230, 18px 18px #fcd230, 19px 19px #fcd230, 20px 20px #fcd230, 21px 21px #fcd230, 22px 22px #fcd230, 23px 23px #fcd230, 24px 24px #fcd230, 25px 25px #fcd230, 26px 26px 6px black;
+    transition: 4s ease;
+    transition-delay: 5s; }
+
+  header:hover:after {
+    text-shadow: 1px 1px #04C4C7, 2px 2px #04C4C7, 3px 3px #04C4C7, 4px 4px #04C4C7, 5px 5px #04C4C7, 6px 6px #04C4C7, 7px 7px #04C4C7, 8px 8px #04C4C7, 9px 9px #04C4C7, 10px 10px #04C4C7, 11px 11px #04C4C7, 12px 12px #04C4C7, 13px 13px #04C4C7, 14px 14px #04C4C7, 15px 15px #04C4C7, 16px 16px #04C4C7, 17px 17px #04C4C7, 18px 18px #04C4C7, 19px 19px #04C4C7, 20px 20px #04C4C7, 21px 21px #04C4C7, 22px 22px #04C4C7, 23px 23px #04C4C7, 24px 24px #04C4C7, 25px 25px #04C4C7, 26px 26px 6px black; }
 
   .summary, .preamble, .explanation, .participation, .benefits, .requirements, .design-selection, .design-archives, .zen-resources {
     padding: 2em calc(50% - 250px); }
@@ -623,6 +625,8 @@ p {
       padding: 20px;
       background: none;
       border: none; }
+      .sidebar .design-selection p, .sidebar .design-selection nav ul, .sidebar .design-selection ul, .sidebar .design-archives p, .sidebar .design-archives nav ul, .sidebar .design-archives ul, .sidebar .zen-resources p, .sidebar .zen-resources nav ul, .sidebar .zen-resources ul {
+        padding: 30px; }
       .sidebar .design-selection ul, .sidebar .design-archives ul, .sidebar .zen-resources ul {
         box-shadow: none; }
 
