@@ -1,4 +1,43 @@
 @import url(https://fonts.googleapis.com/css?family=Marvel:700|Sail|Cabin:400,600);
+.info_box_wrapper {
+  box-sizing: border-box;
+  border: 2px solid #BD684A;
+  width: 90%;
+  margin: 30px auto;
+  text-align: center;
+  overflow: hidden; }
+  .info_box_wrapper .hours {
+    padding: 50px;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #BD684A;
+    display: inline-block;
+    float: left;
+    margin: 0; }
+  .info_box_wrapper .border {
+    height: 150px;
+    border-right: 2px solid #BD684A;
+    display: inline-block;
+    position: relative;
+    top: 25px; }
+  .info_box_wrapper .hours2 {
+    padding: 50px;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #BD684A;
+    display: inline-block;
+    float: right;
+    margin: 0; }
+
+.hours, .hours2 {
+  font-family: "Marvel", sans-serif;
+  font-size: 1em; }
+
+@media screen and (min-width: 650px) {
+  .info_box_wrapper .hours, .info_box_wrapper .hours2 {
+    font-size: 1.3em; }
+  .info_box_wrapper .border {
+    top: 50px; } }
 /*---WRAPPER STYLING-*/
 .wrapper {
   background-color: #EBEDEF; }
