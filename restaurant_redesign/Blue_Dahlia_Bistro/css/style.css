@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Marvel:700);
+@import url(https://fonts.googleapis.com/css?family=Marvel:700|Sail|Cabin:400,600);
 /*---WRAPPER STYLING-*/
 .wrapper {
   background-color: #EBEDEF; }
@@ -102,11 +102,12 @@ ul {
   .large_nav {
     display: inline-block;
     text-decoration: none;
-    color: #EBEDEF;
     padding: 10px;
-    background-color: #BD684A; }
+    color: #BD684A;
+    font-size: 1.3em;
+    font-weight: 700; }
     .large_nav:hover {
-      background-color: #4ABDA2; }
+      color: #4ABDA2; }
 
   .navigation {
     display: none; }
