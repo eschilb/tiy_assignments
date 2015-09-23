@@ -11,12 +11,18 @@ Walt commutes into the city and has the time to get through a few lessons while 
 ### Use Case
 
 1. Navigates to site.
-2. Already logged in when the page loads
+2. Already logged in when the page loads so adds new course
 3. Selects the placement test and takes the test to figure out where he should begin.
 4. Will click out of lessons that do no interest him or are irrelevant to the needs of travel.
 5. Scrolls through lessons to see if he can find the appropriate lessons.
 6. Navigates to discussion page to thumb through forum topics related to the country he's going to visit.
 7. Finds a thread and posts with other site users.
+
+### Testing
+
+1. A/B Test make the placement test more prominent (before basics button) and offer up a different icon instead of an institution
+2. A/B test discussion and immersion - add blinking cursor to search
+3. A/B test - remove icons from lesson buttons and use text only
 
 
 # Uma the Business Executive
@@ -27,7 +33,7 @@ Uma, in her 40s with a husband and with a kid out of the house, works for a comp
 
 ### User Scenario
 
-The company that she works for is sending her to an office overseas for 4 months so she'll need to be prepared to talk with other business leaders. She is involved in a conversational group to get ramped up, but she wants to get started with some simple lessons while she has some free time in the evenings. Her husband is also going with her, so they can also practice together.
+The company that she works for is sending her to an office overseas for 4 months so she'll need to be prepared to talk with other business leaders. She is involved in a conversational group to get ramped up, but she wants to get started with some simple lessons while she has some free time in the evenings. Her husband is also going with her, so they can practice together.
 
 ### Use Case
 
@@ -38,6 +44,12 @@ The company that she works for is sending her to an office overseas for 4 months
 5. Sets a daily goal.
 6. Goes back to home page.
 7. Sends invite to her husband.
+
+### Testing
+
+1. A/B Test to make all navigation at the top a button
+2. A/B test remove icons on navigation bar
+3. A/B test use two buttons with text for basics and placement test
 
 Toni the Teenager
 
@@ -57,3 +69,9 @@ Toni has time after dinner and during study time at the library and on the weeke
 4. Keeps going through lessons as each one is mastered.
 5. Goes back to home after she tests out of a few skill clumps.
 6. Invites friends from class via facebook.
+
+### Testing
+
+1. A/B Test a more oustanding button for "find friends on facebook"
+2. A/B test a more prominent "basics" button but making it orange and making the placement test button a smaller size
+3. A/B test an icon by "set your daily goal"
