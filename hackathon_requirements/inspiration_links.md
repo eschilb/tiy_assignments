@@ -1,0 +1,5 @@
+[ParkMe](https://www.parkme.com/austin-parking) is a web app that can park you in reserved spots around the city (mostly parking garages in Austin). It sounds like they also have the ability to look for metered spots in real time in other larger cities to reserve. I'd like to use the responsiveness of this site as inspiration for our design. The large header with the logo can also inspire the design. Their fonts are simple and large which I like, but they have way too much content on their page. Our idea will probably look like an extremely scaled back version of this since it focuses on eateries only.
+
+[Open Table](http://www.opentable.com/austin-restaurants) responsive site! super large buttons on the page that have types of cuisine that I like if we go for simple buttons. The large header and the logo placement works for drawing attention to important areas where they want to take action. 
+
+[Ride Scout](http://www.ridescout.com/) responsive and very simple layout. also a large header. Nice logo! Clean.
