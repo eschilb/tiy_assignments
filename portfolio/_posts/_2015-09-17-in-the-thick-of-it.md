@@ -1,4 +1,9 @@
-#In The Thick of It
+---
+layout: post
+title:  "In The Thick of It"
+date:   2015-09-17
+categories: 
+---
 
 It's the end of week 4 at The Iron Yard and feeling like I'm way in the thick of it. It's hard to believe that it's been 4 weeks and that the hackathon is next weekend. What? Where did all the time go? I've been so caught up in the program that I haven't had a lot of reflection on myself and on what's next until recently. The blog posts help to collect my thoughts and I'm sure I'll look back and wonder how insane I sound in this moment.
 

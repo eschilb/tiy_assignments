@@ -1,4 +1,10 @@
-# Discovering Typography 
+---
+layout: post
+title:  "Discovering Typography"
+date:   2015-09-09
+categories: 
+---
+
 
 Starting with typography ideas this week has been challenging. My process so far has been to look at restaurant websites that I like and think about the reasons that the design works. Many times it has something to do with the typography. Then, I look through fonts to test out with my content. This seems to have been the most time consuming part of the process.
 

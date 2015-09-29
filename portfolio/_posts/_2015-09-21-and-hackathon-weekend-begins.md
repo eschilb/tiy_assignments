@@ -1,4 +1,9 @@
-# And Hackathon Week Begins
+---
+layout: post
+title:  "And Hackathon Week Begins"
+date:   2015-09-21
+categories: 
+---
 
 Today we showed off the CSS Zen Garden websites and received feedback. We also were reviewed for week 3 and 4 of class and it went well considering that I started from square one at the beginning of the course. It's great to feel how far I've come, but I know that there is work to do. 
 

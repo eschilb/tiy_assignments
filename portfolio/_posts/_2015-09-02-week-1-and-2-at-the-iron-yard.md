@@ -1,4 +1,10 @@
-# Blogolicious Post Week 1 and 2
+---
+layout: post
+title:  "Week 1 and 2 at The Iron Yard"
+date:   2015-09-02
+categories: 
+---
+
 
 Hey, everybody! 
 

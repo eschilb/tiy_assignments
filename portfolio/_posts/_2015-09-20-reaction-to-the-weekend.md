@@ -1,4 +1,9 @@
-# Reactions to Weekend
+---
+layout: post
+title:  "Reactions to the Weekend"
+date:   2015-09-20
+categories: 
+---
 
     This weekend was a project to redesign the CSS Zen Garden website with a theme based on our assigned art movement. I was given Pop Art and the idea is to use the same HTML file from the original website and only use CSS to showcase our web design skills. 
     
