@@ -1,0 +1,24 @@
+# Word List
+
+	- nostalgic
+	- old school goes new school
+	- book club
+	- ratings system
+	- reviews
+	- browse
+	- bookstore
+	- recommendations
+	- lists
+	- organization
+	- to do
+	- best friends are literary characters
+	- bookworm
+	- social network
+	- commentary
+	- exploration
+	- creative
+	- imagination
+	- debates
+	- growth and learning
+	- curled up
+	- coffeehouse
