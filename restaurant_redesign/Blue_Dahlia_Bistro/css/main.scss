@@ -13,7 +13,7 @@
 
 .header {
 	padding: 20px 0;
-	width: 100%;
+	// width: 100%;
 	text-align: center;
 
 	.logo {
@@ -109,7 +109,7 @@ ul {
 
 .logo {
 	font-family: $logo-font-family;
-	font-size: 2em;
+	font-size: 2.5em;
 }
 
 .menu_item {
@@ -136,7 +136,7 @@ ul {
 	}
 
 	.logo {
-		font-size: 3em;
+		font-size: 5em;
 	}
 
 	.large_nav {
@@ -186,10 +186,9 @@ ul {
 @media screen and (min-width: 901px) {
 
 	.header {
-		margin: 0 auto;
 		text-align: center;
 		.logo {
-		font-size: 4em;
+		font-size: 6em;
 		padding: 0;
 		display: inline-block
 		}
