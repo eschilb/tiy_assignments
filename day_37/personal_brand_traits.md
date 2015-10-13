@@ -2,7 +2,7 @@
 
 clever
 observant
-professionl
+professional
 confident
 understated
 
