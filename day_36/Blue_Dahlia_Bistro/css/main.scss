@@ -166,12 +166,17 @@ ul {
 	.header .nav-collapse li  a {
 		float: left;
 		margin: 0 10px;
-		padding: 5px 10px;
+		padding: 10px 20px;
 		font-size: 1.3em;
 		text-decoration: none;
 		display: inline-block;
 	}
 
+	.header .nav-collapse ul {
+
+		margin: 0 auto;
+		text-align: center;
+	}
 
 	.large_nav {
 		display: inline-block;
@@ -228,14 +233,6 @@ ul {
 		}
 	}
 
-	// .nav_border_right, .nav_border_left {
-	// 	display: inline-block;
-	// 	border-bottom: solid #716865 2px;
-	// 	border-top: solid #716865 2px;
-	// }
-
-
-
 	.menu_header{
 		.menu {
 			font-size: 9em;
@@ -248,10 +245,6 @@ ul {
 		padding: 0 0 40px 0;
 	}
 
-	// .col {
-	// 	@include grid2(2);
-	// 	height: 120px;
-	// }
 }
 
 
