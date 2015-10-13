@@ -54,7 +54,8 @@ Passionate but not obsessive:
 
 Passionate:
 
-![Talent isn't much without passion](https://d13yacurqjgara.cloudfront.net/users/1844/screenshots/24866/shot_1275836084.png "passionate")
+![Talent isn't much without passion](https://d13yacurqjgara.cloudfront.net/users/1844/screenshots/24866/shot_1275836084.png  "passionate")
+
 
 Obsessive: 
 
