@@ -1,0 +1,155 @@
+<!DOCTYPE>
+
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <title>Blue Dahlia Bistro</title>
+	    <link type="text/css" rel="stylesheet" href="css/normalize.css">
+	    <link type="text/css" rel="stylesheet" href="css/main.css">
+	    <link type="text/css" rel="stylesheet" href="css/style.css">
+	    <noscript>
+			<style>
+				.fd-wrapper > img{
+					display: block;
+					margin: 0 auto;
+				}
+			</style>
+		</noscript>
+		<script id="pageTmpl" type="text/x-jquery-tmpl">
+			<div class="fd-box-wrapper">
+				<div class="fd-box fd-box-upper">
+					<div class="fd-front">
+						<div class="fd-image">
+							<a href="#" class="fd-option fd-option-fullscreen">Fullscreen</a>
+							<div class="fd-option fd-loading"></div>
+						</div>
+						<!-- any other content after this -->
+                    <div class="header">
+
+                        </span>
+                        <div class="clr"></div>
+                    </div>
+
+                    <p id="fd-message" class="fd-message" style="display:none;">Note: Try opening this page with Chrome or Safari to see the 3D effect!</p>
+                </div>
+					<div class="fd-back"></div>
+					<div class="fd-right"></div>
+					<div class="fd-left"></div>
+					<div class="fd-top"></div>
+					<div class="fd-bottom">
+						<a href="#" class="fd-option fd-option-zoomout">Zoom out</a>
+					</div>
+				</div>
+			</div>
+			<div class="fd-box-wrapper">
+				<div class="fd-box fd-box-lower">
+					<div class="fd-front">
+						<div class="fd-image">
+							<h2 class="fd-title"></h2>
+						</div>
+						<!-- dot navigation -->
+						<ul class="fd-nav">
+							<li><a href="#"><span>Image 1</span></a></li>
+							<li><a href="#"><span>Image 2</span></a></li>
+							<li><a href="#"><span>Image 3</span></a></li>
+						</ul>
+						<!-- any other content after this -->
+					</div>
+					<div class="fd-back"></div>
+					<div class="fd-right"></div>
+					<div class="fd-left"></div>
+					<div class="fd-top"></div>
+					<div class="fd-bottom"></div>
+				</div>
+			</div>	
+		</script>
+	    <script type="text/javascript" src="js/modernizr.custom.40443.js"></script>
+	    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	    <link rel="stylesheet" href="css/responsive-nav.css">
+		<script src="js/responsive-nav.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="home_background"></div>
+			<div class="header home_header">
+				<h1 class="logo">
+				Blue Dahlia Bistro
+				</h1>
+				<nav class="nav-collapse">
+				  <ul>
+				    <li><a href="#">Menus</a></li>
+				    <li><a href="#">Contact Us</a></li>
+				    <li><a href="#">Find Us</a></li>
+				  </ul>
+				</nav>
+<!-- 				<div class="nav_bar">
+					<a class="large_nav" href="#">About Us</a>
+					<a class="large_nav" href="menu.html">Menu</a>
+					<a class="large_nav" href="#">Contact Us</a>
+					<a class="large_nav" href="#">Find Us</a>
+				</div>
+				<a href="#" class="navigation">
+				&#9776;
+				</a> -->
+			</div>
+			<div class="main_container hours">
+				<div class="welcome"></div>
+				<div class="location">
+					<p><span>Location</span></p>
+					<p><br><span>1115 E. 11th Street</span></p>
+					<p><br><span>Austin, Texas 78702</span></p>
+					<p><br><span>512-542-9542</span></p>
+				</div>
+				<div class="restaurant_hours">	 
+					<p>Hours</p>
+					<div class="border"></div>
+					<p>Monday-Thursday 8am-10pm</p>
+					<p><br>Friday 8am-11pm</p>
+					<p><br>Saturday 9am-11pm</p>
+					<p><br>Sunday 9am-10pm</p>
+				</div>
+
+				<div class="restaurant_description">
+						<p>A European Bistro</p>
+						<div class="border"></div>
+						<p>We serve fresh, beautifully simple food using 
+						local and organic ingredients when available.
+						 Enjoy a leisurely meal at a private or communal table.  
+						Relax and feel like you are in the European countryside.</p>
+				</div>
+			</div>
+			<div id="fd-wrapper" class="fd-wrapper">
+                <img src="images/medium/1.jpg" data-bgimg="images/large/1.jpg" alt="image01" title="A Yummy Shot of Brunch" />
+                <img src="images/medium/2.jpg" data-bgimg="images/large/2.jpg" alt="image02" title="Love Coffee and Creme Brulee on the Patio" />
+                <img src="images/medium/3.jpg" data-bgimg="images/large/3.jpg" alt="image03" title="" />
+            </div>
+			<div class="footer">
+				<ul>
+					<li><a class="facebook" href="#"><img src="images/facebook32.png"></a></li>
+					<li><a class="twitter" href="#"><img src="images/twitter32.png"></a></li>
+					<li><a class="instagram" href="#"><img src="images/instagram32.png"></a></li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slideshow.min.js"></script>
+        <script type="text/javascript">
+            $(function() {
+			
+                $('#fd-wrapper').slideshow({
+                    width	: 600,
+                    height	: 396,
+					onLoad	: function() {
+						if( !Modernizr.csstransforms3d )
+							$('#fd-message').show();
+					}
+                });
+				
+            });
+        </script>
+        <script>
+		  var nav = responsiveNav(".nav-collapse");
+		</script>
+	</body>
+</html>

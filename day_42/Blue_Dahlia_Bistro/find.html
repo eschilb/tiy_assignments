@@ -1,0 +1,98 @@
+<!DOCTYPE>
+
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <title>Blue Dahlia Bistro</title>
+	    <link type="text/css" rel="stylesheet" href="css/normalize.css">
+	    <link type="text/css" rel="stylesheet" href="css/main.css">
+	    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	    <link rel="stylesheet" href="css/responsive-nav.css">
+		<script src="js/responsive-nav.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script>
+	      function initialize() {
+	        var mapCanvas = document.getElementById('map');
+	        var mapOptions = {
+	          center: new google.maps.LatLng(30.2688539,-97.7298304),
+	          zoom: 18,
+	          mapTypeId: google.maps.MapTypeId.ROADMAP,
+	          styles: [
+  {
+    featureType: "all",
+    stylers: [
+      { hue: "#BD684A" },
+      { saturation: 0 }
+    ]
+  },{
+  	featureType: "road.arterial",
+  	elementType: "geometry.stroke",
+    stylers: [
+      { hue: "#4A9FBD" },
+      { saturation: 100 }
+    ]
+  },{
+    featureType: "road.arterial",
+    elementType: "geometry",
+    stylers: [
+      { hue: "#4A9FBD" },
+      { saturation: 0 }
+    ]
+  },{
+    featureType: "poi.business",
+    elementType: "labels",
+    stylers: [
+      { visibility: "off" }
+    ]
+  }
+]
+	        }
+	        var map = new google.maps.Map(mapCanvas, mapOptions)
+	      }
+
+	      google.maps.event.addDomListener(window, 'load', initialize);
+	    
+	    </script>
+
+
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<h1 class="logo">
+				Blue Dahlia Bistro
+				</h1>
+				<nav class="nav-collapse">
+				  <ul>
+				    <li><a href="#">Menus</a></li>
+				    <li><a href="#">Contact Us</a></li>
+				    <li><a href="#">Find Us</a></li>
+				  </ul>
+				</nav>
+<!-- 				<div class="nav_bar">
+					<a class="large_nav" href="#">About Us</a>
+					<a class="large_nav" href="#">Menu</a>
+					<a class="large_nav" href="#">Contact Us</a>
+					<a class="large_nav" href="#">Find Us</a>
+				</div> -->
+<!-- 				<a href="#" class="navigation">
+				&#9776;
+				</a> -->
+			</div>
+			<div class="main">
+				<div id="map"></div>
+			</div>
+			<div class="footer">
+				<ul>
+					<li><a class="facebook" href="#"><img src="images/facebook32.png"></a></li>
+					<li><a class="twitter" href="#"><img src="images/twitter32.png"></a></li>
+					<li><a class="instagram" href="#"><img src="images/instagram32.png"></a></li>
+				</ul>
+			</div>
+		</div>
+		<script>
+		  var nav = responsiveNav(".nav-collapse");
+		</script>
+
+	</body>
+</html>

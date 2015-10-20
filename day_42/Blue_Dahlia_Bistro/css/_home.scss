@@ -1,0 +1,22 @@
+
+.home_header {
+	background: linear-gradient(
+      rgba(0, 0, 0 , 0.75), 
+      rgba(0, 0, 0 , 0.75)), url(../images/proscuitto.jpg) 0 0 no-repeat;
+		background-size: cover;
+		background-position: 60%;
+
+}
+
+
+	.hours {
+		font-size: 2em;
+		line-height: 1.5em;
+		color: $menu-header-color;
+		font-family: $content-head-font-family;
+		display: inline-block;
+	}
+
+@media screen and (min-width: 650px) {
+
+}

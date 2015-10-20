@@ -1,0 +1,253 @@
+@import 'variables', 'mixin', 'home', 'map';
+@import url(https://fonts.googleapis.com/css?family=PT+Serif+Caption|Sail|Cabin:400,600);
+
+
+/*---WRAPPER STYLING-*/
+
+.wrapper {
+	background-color: $background-color;
+}
+
+/*---HEADER and NAVIGATION--*/
+
+.header {
+	padding: 20px 0;
+
+
+	.logo {
+		color: $logo-color;
+		text-align: center;
+	}
+
+	.nav-collapse li  a {
+		color: $background-color;
+		background-color: $menu-header-color;
+		padding: 5px 10px;
+		font-size: 1em;
+		text-decoration: none;
+		display: block;
+		max-width: 250px;
+
+		&:hover {
+			background-color: $logo-color;
+		}
+		&:active {
+			background-color: darken($logo-color, 10%);
+		}
+	}
+
+	.nav-collapse {
+		padding: 10px;
+
+		li {
+			margin-top: 2.5px;
+		}
+	}
+
+	.navigation {
+		color: $background-color;
+		background-color: $menu-header-color;
+		padding: 0;
+		margin: 0 auto;
+		font-size: 2em;
+		text-decoration: none;
+
+		&:hover {
+			color: #1a936f;
+		}
+	}
+}
+
+.large_nav {
+	display: none;
+}
+
+/*--MENU--*/
+
+.menu_header {
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)), url(../images/menu_7.jpg) 0 0 no-repeat;
+	background-size: cover;
+	background-position: 60%;
+
+	.menu {
+		color: $background-color;
+		margin: 0 auto;
+		text-align: center;
+		padding: 60px;
+	}
+}
+
+.specialities {
+	margin: 50px auto 0 auto;
+	text-align: center;
+	font-weight: bold;
+	font-size: 2em;
+	color: $menu-header-color;
+}
+
+.menu_item_container {
+	padding: 10px 0;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.menu_item {
+	margin: 30px 60px;
+	font-size: 1.125em;
+	color: $content-color;
+
+	.bold {
+		font-weight: bold;
+	}
+}
+
+.menu_border {
+	margin: 0 auto;
+	width: 50%;
+	border-top: solid $logo-color 2px;
+}
+
+/*--FOOTER---*/
+
+.footer {
+	height: 10%;
+	background-color: $logo-color;
+	overflow: hidden;
+	box-sizing: border-box;
+	margin: 0 auto;
+	text-align: center;
+}
+
+ul {
+	padding: 0;
+
+	li {
+		text-decoration: none;
+		display: inline-block;
+	}
+}
+
+/*----FONTS---*/
+
+.logo {
+	font-family: $logo-font-family;
+	font-size: 2.5em;
+}
+
+.menu_item {
+	font-family: $content-font-family;
+}
+
+.navigation, a {
+	font-family: $content-head-font-family;
+}
+
+.menu {
+	font-family: $content-head-font-family;
+	font-size: 6em;
+}
+
+.menu_subheader {
+	font-family: $content-head-font-family;
+	font-size: 1em;
+}
+
+@media screen and (min-width: 640px) {
+	.wrapper {
+		width: 100%;
+	}
+
+	.logo {
+		font-size: 5em;
+	}
+
+	.header .nav-collapse li  a {
+		float: left;
+		margin: 0 10px;
+		padding: 10px 20px;
+		font-size: 1.3em;
+		text-decoration: none;
+		display: inline-block;
+	}
+
+	.header .nav-collapse ul {
+
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.large_nav {
+		display: inline-block;
+		text-decoration: none;
+		padding: 10px;
+		color: $menu-header-color;
+		font-size: 1.3em;
+		font-weight: 700;
+
+		&:hover {
+			color: $hover-color;
+		}
+	}
+
+	.navigation {
+		display: none;
+	}
+
+	.menu {
+		font-size: 8em;
+		padding: 80px;
+	}
+
+	.main {
+		overflow: hidden;
+	}
+
+	.menu_item_container {
+		padding: 10px 80px 80px 80px;
+		overflow: hidden;
+		box-sizing: border-box;
+		max-width: 1000px;
+	}
+
+	.col {
+		@include grid1(3);
+
+		.menu_item {
+			margin: 20px 0;
+		}
+	}
+}
+
+
+
+@media screen and (min-width: 901px) {
+
+	.header {
+		text-align: center;
+		.logo {
+		font-size: 6em;
+		padding: 0;
+		display: inline-block
+		}
+	}
+
+	.menu_header{
+		.menu {
+			font-size: 9em;
+			padding: 100px;
+		}
+	}
+
+	.specialities {
+		font-size: 3em;
+		padding: 0 0 40px 0;
+	}
+
+}
+
+
+
+
+
