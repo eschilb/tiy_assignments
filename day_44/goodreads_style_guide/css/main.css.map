@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AACQ,wFAAgF;AAIxF,oCAAqC;EAGpC,IAAK;ICFJ,KAAK,EAAE,KAAmD;IAC1D,KAAK,EAAE,IAAI;IACX,UAAU,EAAE,UAAU;IACtB,YAAY,EAPF,GAAG",
+"mappings": "AACQ,6GAAqG;AAI7G,oCAAqC;EAGpC,IAAK;ICFJ,KAAK,EAAE,KAAmD;IAC1D,KAAK,EAAE,IAAI;IACX,UAAU,EAAE,UAAU;IACtB,YAAY,EAPF,GAAG",
 "sources": ["main.scss","_mixin.scss"],
 "names": [],
 "file": "main.css"
