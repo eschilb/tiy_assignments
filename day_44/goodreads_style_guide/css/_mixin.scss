@@ -1,6 +1,6 @@
 $tot-width: 100%;
 $total-num-col: 12;
-$gut-width: 10%;
+$gut-width: 5%;
 $ind-col-width: ($tot-width - (($total-num-col - 1)*$gut-width))/$total-num-col;
 
 @mixin grid1($col-num) {
