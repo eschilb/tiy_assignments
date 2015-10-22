@@ -1,0 +1,26 @@
+@import 'variables', 'mixin', 'home', 'map';
+@import url(https://fonts.googleapis.com/css?family=PT+Serif+Caption|Sail|Cabin:400,600);
+
+
+
+@media screen and (min-width: 640px) {
+
+
+	.col {
+		@include grid1(3);
+
+	}
+}
+
+
+
+@media screen and (min-width: 901px) {
+
+
+
+}
+
+
+
+
+
