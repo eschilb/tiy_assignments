@@ -69,6 +69,24 @@
   margin-top: 5px;
   margin-bottom: 5px; }
 
+.typography-header {
+  color: #2a3137;
+  font-family: "Averia Serif Libre", cursive;
+  font-size: 1.875rem;
+  font-weight: 400; }
+
+.typography-nav {
+  color: #454545;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700; }
+
+.typography-body {
+  color: #454545;
+  font-family: "Lato", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400; }
+
 @media screen and (min-width: 401px) {
   .row .col {
     width: 47.5%;

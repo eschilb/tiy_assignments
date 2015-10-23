@@ -87,6 +87,27 @@
 	margin-bottom: 5px;
 }
 
+.typography-header {
+	color: $navy-color;
+	font-family: $header-font;
+	font-size: 1.875rem;
+	font-weight: 400;
+}
+
+.typography-nav {
+	color: $black-color;
+	font-family: $navigation-font;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.typography-body {
+	color: $black-color;
+	font-family: $body-font;
+	font-size: 1.125rem;
+	font-weight: 400;
+}
+
 @media screen and (min-width: 401px) {
 
 	.row {
