@@ -1,0 +1,3 @@
+# Festival Guide
+
+For those who want to go to festivals and find festivals related to their interests. Users will be empowered to document their festival experiences for themselves or to share with other festival goers. Each festival is different, so users can hone in on what makes a festival an amazing experience for them and plan out a calendar of festivals and stay organized. Users can find specific festivals and all the information needed to plan out their next festival in one place. Users can curate a guide to festivals that they went to, like 2015 festivals, camping festivals, festivals with fire-eating or pyrotechnics, the best dj sets, etc.
