@@ -1,0 +1,140 @@
+<!DOCTYPE>
+
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <title>Popover</title>
+	    <link type="text/css" rel="stylesheet" href="css/normalize.css">
+	    <link type="text/css" rel="stylesheet" href="css/main.css">
+	    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	</head>
+	<body>
+    <div class="header">
+      <a href="index.html" class="header-logo"><div class="logo-place"></div></a>
+      <nav class = "nav-primary" role = "navigation">
+      <a href="" class="menuIcon">Menu</a>
+      <ul class="nav">
+        <a href="index.html"><li>Home</li></a>
+        <a href="events.html"><li class="selected">Events</li></a>
+        <a href="create.html"><li>Create Event</li></a>
+        <a href="#"><li>Profile</li></a>
+      </ul>
+      </nav>
+    </div>
+		<div class="scroll-on-page">
+      <aside id="scroll-on-page-top">
+        <a class="scroll-on-page-link" href="#scroll-link-1">Upcoming Events</a>
+        <a class="scroll-on-page-link" href="#scroll-link-2">Past Events</a>
+        <a class="scroll-on-page-link" href="#scroll-link-3">My Events</a>
+      </aside>
+
+      <article>
+        <section>
+          <h4 id="scroll-link-1">Upcoming Events</h4>
+
+            <a href="listing.html">
+              <div class="btn btn-l-r">
+                <p>Wed, Nov 18 | 6 pm</p>
+                <p>Mambo Italiano</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="btn btn-l-r">
+                <p>Mon, Nov 23 | 7 pm</p>
+                <p>Give Thanks Dinner</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="btn btn-l-r last-event">
+                <p>Fri, Dec 4 |  7:30 pm</p>
+                <p>Barbecuing</p>
+              </div>
+            </a>
+          <a class="scroll-on-page-link" href="#scroll-on-page-top">Back to top</a>
+        </section>
+        <section>
+          <h4 id="scroll-link-2">Past Events</h4>
+            <a href="#">
+              <div class="btn btn-l-r">
+                <p>Fri, Oct 30 | 6 pm</p>
+                <p>Eating In the Dark</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="btn btn-l-r">
+                <p>Thurs, Oct 22 | 7 pm</p>
+                <p>Locavore Dinner</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="btn btn-l-r last-event">
+                <p>Sat, Oct 17 | 7:30 pm</p>
+                <p>Loco for Tacos</p>
+              </div>
+            </a>
+          <a class="scroll-on-page-link back-to-top" href="#scroll-on-page-top">Back to top</a>
+        </section>
+        <section>
+          <h4 id="scroll-link-3">My Events</h4>
+            <a href="#">
+              <div class="btn btn-l-r">
+                <p>Wed, Nov 18 | 6 pm</p>
+                <p>Mambo Italiano</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="btn btn-l-r">
+                <p>Mon, Nov 23 | 7 pm</p>
+                <p>Give Thanks Dinner</p>
+              </div>
+            </a>
+            <a href="#">
+              <div class="btn btn-l-r last-event">
+                <p>Fri, Dec 4 | 7:30 pm</p>
+                <p>Barbecuing</p>
+              </div>
+            </a>
+          <a class="scroll-on-page-link back-to-top" href="#scroll-on-page-top">Back to top</a>
+        </section>
+      </article>
+    </div>
+
+<script>$(".menuIcon").click(function(event) {
+  event.preventDefault();
+  $(".nav").toggleClass("list");
+});
+</script>
+<script>
+(function (jQuery) {
+  jQuery.mark = {
+    jump: function (options) {
+      var defaults = {
+        selector: 'a.scroll-on-page-link'
+      };
+      if (typeof options == 'string') {
+        defaults.selector = options;
+      }
+
+      options = jQuery.extend(defaults, options);
+      return jQuery(options.selector).click(function (e) {
+        var jumpobj = jQuery(this);
+        var target = jumpobj.attr('href');
+        var thespeed = 1000;
+        var offset = jQuery(target).offset().top;
+        jQuery('html,body').animate({
+          scrollTop: offset
+        }, thespeed, 'swing');
+        e.preventDefault();
+      });
+    }
+  };
+})(jQuery);
+
+
+jQuery(function(){  
+  jQuery.mark.jump();
+});
+
+</script>
+	</body>
+</html>
